@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/blog_page.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about_page.css" />
+    <link rel="icon" href="/images/favicon.png" />
+    <title>DAXX</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+
+    <!-- main header -->
+    <header class="main-header">
+      <div class="header-upper">
+        <div class="container clearfix">
+          <div class="header-inner position-relative d-flex align-item-center">
+            <!-- logo -->
+            <div class="logo-outer my-auto" style="margin-left: -60px">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="images/logos/logo.png" alt="logo" title="logo" />
+                </a>
+              </div>
+            </div>
+            <div class="nav-outer mx-auto clearfix">
+              <!-- main menu -->
+              <nav class="main-menu navbar-expand-lg">
+                <div class="navbar-header py-10">
+                  <!-- toggle button -->
+                  <button
+                    class="navbar-toggle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse"
+                  >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div class="navbar-collapse collapse clearfix">
+                  <ul class="navigation clearfix" id="menu-primary-menu">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="index.html"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Home
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="index.html">Home</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="index.html"
+                            >Home OnePage</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="projects.html"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Projects
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="projects.html"
+                            >Projects</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="projects.html"
+                            >Project Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="schedule.html" class="nav-link">Schedule</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Blog
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="blog.html  ">Blog</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="blog.html"
+                            >Blog Grid</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="blog.html"
+                            >Blog Details</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a href="contact.html" class="nav-link">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <!-- menu btns -->
+            <div class="menu-btns">
+              <a
+                href="index.html"
+                class="theme-btn btn btn-secondary text-white px-2 py-1"
+              >
+                <small>Ask a Question</small>
+                <i class="bi bi-chat-dots"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--  / hero section -->
+    <section class="banner-area-blog py-8 corner-shapes-wrap">
+      <div class="corner-shapes"></div>
+      <div class="container pb-5">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-xl-8 col-lg-12">
+            <div class="banner-content mb-8 py-5">
+              <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Blog
+                  </li>
+                </ol>
+              </nav>
+              <h1 class="text-white mt-4">Latest news updates & articles</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog area -->
+    <section class="blog-area position-relative z-1 pt-6 pb-6 mt-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-10 col-md-10">
+            <div class="blog-item">
+              <div class="image">
+                <a href="index.html">
+                  <img
+                    src="images/blog/blog-middle.png"
+                    decoding="async"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="content">
+                <a href="index.html" class="category"> CONSTRUCTION </a>
+                <h5>
+                  <a href="index.html" class="text-decoration-none"
+                    >Start of installation of water and heating systems</a
+                  >
+                </h5>
+                <p>
+                  Dolor morbi non arcu risus quis varius quam quisque. Purus
+                  faucibus ornare suspendisse sed. Blandit volutpat maecenas
+                  volutpat...
+                </p>
+                <a
+                  href="https://daxx.lohatheme.com/?p=111"
+                  class="theme-btn style-five btn btn-outline-secondary fw-bold border border-2 border-secondary"
+                >
+                  Read More <i class="fa-solid fa-arrow-right-long"></i
+                ></a>
+                <ul class="blog-meta">
+                  <li>
+                    <i class="bi bi-chat-dots"></i>
+                    1 Comment
+                  </li>
+                  <li>
+                    <i class="bi bi-person"></i>
+                    <span class="before-author"> By: </span>
+                    <a
+                      href="https://daxx.lohatheme.com/?author=1"
+                      title="Posts by Admin"
+                      class="text-decoration-none"
+                      rel="author"
+                      >Admin</a
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-calendar3"></i>
+                    February 7, 2024
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul
+          class="pagination mt-40 flex-wrap justify-content-center wow fadeInUp delay-0-2s animated"
+          style="visibility: visible; animation-name: fadeInUp"
+        >
+          <li class="page-item">
+            <a class="prev px-4 text-decoration-none py-1" href="blog.html"
+              >Prev</a
+            >
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="blog.html">1</a>
+          </li>
+          <li class="page-item active">
+            <a
+              class="page-link"
+              href="https://daxx.lohatheme.com/?page_id=81&amp;paged=2"
+              ><span class="page-link"
+                >2<span class="sr-only">(current)</span></span
+              ></a
+            >
+          </li>
+          <li class="page-item">
+            <a
+              class="next px-4 py-1 text-decoration-none"
+              href="https://daxx.lohatheme.com/?page_id=81&amp;paged=2"
+              >Next</a
+            >
+          </li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="main-footer position-relative z-1 mt-5" id="footer">
+      <div class="footer-top pt-6 pb-5">
+        <div class="container">
+          <div class="row justify-content-center g-8">
+            <div class="col-xl-4 col-lg-7">
+              <div class="section-title text-white mb-5">
+                <span
+                  class="sub-title text-uppercase text-secondary mb-5 fw-bold"
+                  >Developer</span
+                >
+                <h2 class="text-white fs-1">Do you Want to Visit us</h2>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-5">
+              <div class="footer-top-text text-white mb-5">
+                121 King Street, Melbourne Victoria 3000 Australia <br />
+                <a
+                  href=""
+                  class="d-inline-block text-white text-decoration-none"
+                  ><small
+                    ><i class="fa-solid fa-location-crosshairs text-white"></i>
+                    Look at the map</small
+                  ></a
+                >
+              </div>
+            </div>
+            <div class="col-xl-3">
+              <div class="footer-top-text mb-5">
+                <a
+                  href="tel:+61 3 8376 6284"
+                  class="text-white text-decoration-none"
+                  >+61 3 8376 6284</a
+                ><br />
+                <a
+                  href="mailto:info@daxx.com"
+                  class="text-white text-decoration-none"
+                  >info@daxx.com</a
+                ><br />
+                <a
+                  href="https://daxx.lohatheme.com/?page_id=227"
+                  class="mt-3 text-white text-decoration-none btn btn-outline-primary p-0 border border-1 border-white px-1"
+                  ><small
+                    ><i class="fa-solid fa-envelope"></i> Send a Message</small
+                  ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-cta-wrap">
+        <div class="container">
+          <div class="footer-cta-inner pt-5 text-center mx-auto mt-5 pb-5">
+            <h5 class="text-white mb-5">
+              For more details, leave your phone number and we will be happy to
+              answer all your questions
+            </h5>
+
+            <div class="input-group justify-content-center">
+              <input
+                type="text"
+                name=""
+                placeholder="Phone"
+                style="width: 500px"
+                class="border border-end"
+              />
+              <button class="btn btn-secondary px-4 border-start" type="submit">
+                Submit Now
+              </button>
+            </div>
+          </div>
+          <hr style="opacity: 1" />
+        </div>
+      </div>
+      <div class="footer-bottom pt-5 pb-7">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-2 col-md-4">
+              <div class="footer-logo">
+                <a href="index.html">
+                  <img src="images/logos/logo-two.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-5 col-md-8">
+              <div
+                class="footer-text lh-sm text-white mb-4 text-center text-md-start"
+                style="font-size: 14px"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Purus gravida quis blandit turpis cursus in hac habitasse
+                platea.
+              </div>
+            </div>
+            <div class="col-xl-2 col-md-4">
+              <div class="footer-socials text-center text-md-start">
+                <div class="social-style-one mb-5">
+                  <a href="https://facebook.com"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="https://instagram.com"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="https://linkedin.com"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-8">
+              <div
+                class="copyright-area mb-5 text-xl-end text-center text-md-start"
+              >
+                <small style="font-size: 12px"
+                  >© 2024 DAX Residental Complex.All Rights Reserved /</small
+                >
+                <a
+                  href="https://daxx.lohatheme.com/?p=111"
+                  class="text-secondary text-decoration-none"
+                  style="font-size: 12px"
+                  >Privacy Policy</a
+                >
+                /
+                <a
+                  href="https://daxx.lohatheme.com/?p=109"
+                  class="text-secondary text-decoration-none"
+                  style="font-size: 12px"
+                  >Cookies</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scroll top button -->
+    <button id="to-top" class="to-top-btn border rounded">
+      <i class="bi bi-arrow-bar-up text-white fs-3"></i>
+    </button>
+
+    <!-- Load jQuery first -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Load jQuery plugins and libraries dependent on jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Load Nice Select after jQuery -->
+    <script src="/js/jquery.nice-select.js"></script>
+
+    <!-- Load Bootstrap and other libraries -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Ensure no duplicate libraries (e.g., remove this duplicate imagesLoaded if not needed) -->
+    <!-- <script src="/js/imagesloaded.pkgd.min.js"></script> -->
+
+    <!-- Your custom scripts should come last, after all dependencies are loaded -->
+    <script src="/js/script.js"></script>
+    <script src="/js/script2.js"></script>
+  </body>
+</html>

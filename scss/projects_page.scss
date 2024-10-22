@@ -1,0 +1,101 @@
+/*******************************************************/
+/******************* ## Hero Banner *******************/
+/*******************************************************/
+
+.banner-area-projects {
+  background-size: cover;
+  background-position: bottom;
+  background-color: #282e35;
+}
+
+.corner-shapes-wrap {
+  background: url("../images/background/project-banner.jpg");
+}
+/*******************************************************/
+/******************* ## Cities area  *******************/
+/*******************************************************/
+
+.cities-area {
+  background: #282e35;
+}
+
+.cities-select h3 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .cities-select h3 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .cities-select h3 {
+    font-size: 30px;
+  }
+}
+
+.cities-select .nice-select {
+  border: none;
+  font-size: 24px;
+  border-radius: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+  border-bottom: 1px solid #f15b26;
+}
+
+@media only screen and (max-width: 375px) {
+  .cities-select .nice-select {
+    font-size: 20px;
+  }
+}
+
+.cities-select .nice-select:after {
+  border-color: #f15b26;
+}
+
+.cities-select .nice-select .current {
+  color: white;
+  font-weight: 700;
+}
+.blog-active .item.current {
+  display: block !important; /* Force it to be visible */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.blog-active h2 {
+  font-size: 50px;
+}
+
+.cities-select .nice-select .list {
+  padding: 20px;
+  -webkit-box-shadow: 0px 4px 20px rgba(40, 46, 53, 0.05);
+  box-shadow: 0px 4px 20px rgba(40, 46, 53, 0.05);
+}
+
+.cities-select .nice-select .list li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  .cities-select .nice-select .list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.cities-select .nice-select .list li:not(:last-child) {
+  border-bottom: 1px solid #d9dfe7;
+}
+
+.cities-select .nice-select .list li:hover,
+.cities-select .nice-select .list li.selected {
+  font-weight: 400;
+  color: #f15b26;
+  background: transparent;
+  border-color: #f15b26;
+}

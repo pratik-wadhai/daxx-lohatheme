@@ -1,0 +1,246 @@
+/*******************************************************/
+/******************* ## Page Banner *******************/
+/*******************************************************/
+.banner-area {
+  background: url("../images/background/banner-bg.jpg") right top no-repeat;
+  background-size: cover;
+  background-color: #282e35;
+  background-position: bottom;
+}
+
+.banner-content h1 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 1399px) {
+  .banner-content h1 {
+    font-size: 65px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .banner-content h1 {
+    font-size: 55px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner-content h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .banner-content h1 {
+    font-size: 42px;
+  }
+}
+.banner-content p {
+  color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  .banner-content p {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
+.banner-content .error-text {
+  color: white;
+  display: block;
+  line-height: 1;
+  font-size: 170px;
+  font-weight: 700;
+}
+
+/*******************************************************/
+/******************** ## What We Do ********************/
+/*******************************************************/
+.what-we-do-area .section-title {
+  max-width: 560px;
+}
+
+.what-we-do-item {
+  padding: 40px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  margin-bottom: 40px;
+  height: calc(100% - 40px);
+  border: 1px solid #d9dfe7;
+}
+
+.what-we-do-item .icon {
+  font-size: 65px;
+  margin-bottom: 22px;
+  color: var(--bs-secondary);
+}
+
+.what-we-do-item h6 {
+  margin-bottom: 15px;
+}
+
+.what-we-do-item p {
+  font-size: 15px;
+}
+
+.what-we-do-item:after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 100%;
+  height: 40px;
+  background: #d9dfe7;
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.what-we-do-item:hover {
+  border-color: var(--bs-secondary);
+}
+
+.what-we-do-item:hover:after {
+  background: var(--bs-secondary);
+}
+
+/*******************************************************/
+/******************** ## Team Area *********************/
+/*******************************************************/
+.team-area:before {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 60%;
+  background: #fff5e2;
+  -webkit-clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.team-member {
+  padding: 40px;
+  background: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-member img {
+  margin-bottom: 40px;
+}
+
+.team-member .designation {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.team-member h6 {
+  text-transform: uppercase;
+}
+
+.team-member h6 span {
+  color: var(--main-color);
+}
+
+.team-member hr {
+  max-width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*******************************************************/
+/******************** ## Achievement Area **************/
+/*******************************************************/
+.bgc-secondary {
+  background-color: #fff5e2;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .achievement-area .section-title h2 {
+    font-size: 50px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .counter-wrap {
+    margin-left: -110px;
+  }
+}
+.counter-item-two {
+  display: flex;
+  align-items: center;
+  padding: 10px 45px;
+  background: white;
+  margin-bottom: 40px;
+}
+
+.counter-item-two .count-text {
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--bs-secondary);
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  .counter-item-two .count-text {
+    font-size: 45px;
+  }
+}
+.counter-item-two .counter-title {
+  font-weight: 700;
+  color: #4a515b;
+}
+
+/* Testimonial Style Two * / */
+.testimonial-item.style-two .author-speech {
+  max-width: 360px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.27;
+  font-family: initial;
+  color: #4a515b;
+}
+
+@media only screen and (max-width: 479px) {
+  .testimonial-item.style-two .author-speech {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .testimonial-item.style-two .author-speech {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.testimonial-item.style-two h6 {
+  margin-bottom: 10px;
+}
+
+.testimonial-slider-two .slick-arrow {
+  top: 50%;
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.testimonials-next {
+  right: 0;
+}
+
+.testimonials-prev {
+  left: 0;
+}

@@ -1,0 +1,104 @@
+/*******************************************************/
+/******************* ## Hero Banner *******************/
+/*******************************************************/
+
+.banner-area-contact {
+  background: url("../images/background/blog-banner.jpg") right top no-repeat;
+  background-size: cover;
+  background-color: #282e35;
+  background-position: bottom;
+}
+
+/*******************************************************/
+/******************* ## Contact Form *******************/
+/*******************************************************/
+
+.contact-info-item {
+  display: flex;
+  max-width: 390px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-info-item .icon {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 78px;
+  margin-right: 40px;
+  border: 1px solid #d9dfe7;
+}
+
+@media only screen and (max-width: 375px) {
+  .contact-info-item .icon {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 58px;
+    margin-right: 20px;
+  }
+}
+
+.contact-info-item .title {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.contact-info-item .text {
+  font-weight: 700;
+  line-height: 1.35;
+  color: #4a515b;
+}
+
+.contact-info-item .text span {
+  color: #f15b26;
+}
+
+.contact-info-item .text a {
+  color: #4a515b;
+}
+
+/*******************************************************/
+/******************* ## Services *******************/
+/*******************************************************/
+
+.bgc-secondary {
+  background-color: #fff5e2;
+}
+
+.service-item {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background: white;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 70px 25px 60px;
+}
+
+.service-item .icon {
+  line-height: 1;
+  font-size: 55px;
+  margin-bottom: 35px;
+  color: #f15b26;
+}
+
+.service-item h5 {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.service-item:hover {
+  background: #4a515b;
+}
+
+.service-item:hover h5 {
+  color: white;
+}
