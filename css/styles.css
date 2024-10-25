@@ -215,6 +215,14 @@ body {
   flex: none;
 }
 
+@media only screen and (max-width: 576px) {
+  .header-upper {
+    margin-top: 15px;
+  }
+  .navbar-header {
+    margin-top: 15px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .main-header .logo-outer {
     display: none;
@@ -665,6 +673,11 @@ body {
   }
   .hero-video-btn {
     margin-left: -8rem;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .hero-content .btn-primary {
+    margin-left: 5px !important;
   }
 }
 .corner-shapes-wrap {
