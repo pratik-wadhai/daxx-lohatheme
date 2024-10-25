@@ -1,1 +1,43 @@
-node_modules
+# Node modules directory
+node_modules/
+node_modules/*
+
+# npm debugging logs
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional: logs
+logs
+*.log
+
+# Optional: runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional: dependency directories
+bower_components
+
+# Optional: dotenv environment variables file
+.env
+.env.local
+.env.*.local
+
+# Optional: package-lock (if you want to ignore it)
+# package-lock.json
+
+
+# Ignore specific video file
+images/video/car_video.mp4
+
+# OR ignore all mp4 files in video folder
+images/video/*.mp4
+
+# OR ignore entire video folder
+images/video/

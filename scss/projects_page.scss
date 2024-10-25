@@ -8,6 +8,20 @@
   background-color: #282e35;
 }
 
+@media only screen and (max-width: 576px) {
+  .corner-shapes-wrap {
+    height: 100px;
+  }
+  .banner-content {
+    margin-top: -6rem;
+  }
+  .cities-area .section-title h2 {
+    font-size: 36px !important;
+  }
+  .projects-area .section-title {
+    margin-bottom: -40rem;
+  }
+}
 .corner-shapes-wrap {
   background: url("../images/background/project-banner.jpg");
 }

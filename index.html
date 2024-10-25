@@ -24,6 +24,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -37,10 +38,10 @@
     <!-- main header -->
     <header class="main-header">
       <div class="header-upper">
-        <div class="container clearfix">
-          <div class="header-inner position-relative d-flex align-item-center">
+        <div class="container-fluid clearfix">
+          <div class="header-inner position-relative d-flex align-items-center">
             <!-- logo -->
-            <div class="logo-outer my-auto" style="margin-left: -60px">
+            <div class="logo-outer my-auto">
               <div class="logo">
                 <a href="index.html">
                   <img src="images/logos/logo.png" alt="logo" title="logo" />
@@ -51,6 +52,16 @@
               <!-- main menu -->
               <nav class="main-menu navbar-expand-lg">
                 <div class="navbar-header py-10">
+                  <!-- mobile logo -->
+                  <div class="mobile-logo">
+                    <a href="index.html">
+                      <img
+                        src="images/logos/logo-daxx.png"
+                        alt="Logo"
+                        title="Logo"
+                      />
+                    </a>
+                  </div>
                   <!-- toggle button -->
                   <button
                     class="navbar-toggle"
@@ -149,7 +160,7 @@
               </nav>
             </div>
             <!-- menu btns -->
-            <div class="menu-btns">
+            <div class="menu-btns my-auto">
               <a
                 href="index.html"
                 class="theme-btn btn btn-secondary text-white px-2 py-1"
@@ -166,31 +177,44 @@
     <!--  / hero section -->
     <section class="hero-area py-8 corner-shapes-wrap">
       <div class="corner-shapes"></div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row align-items-center justify-content-between">
           <div class="col-xl-7 col-lg-8">
             <div
-              class="hero-content mb-8 py-5 ms-6"
+              class="hero-content mb-8"
               data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="500"
+              data-aos-delay="200"
             >
               <h1 class="">A unique fusion of convenience and luxury</h1>
-              <a class="btn btn-outline-light fw-semibold"> Explore Daxx </a>
-              <a class="btn btn-primary fw-semibold ms-5 px-5">
+              <a
+                class="btn btn-outline-light fw-semibold"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                Explore Daxx
+              </a>
+              <a
+                class="btn btn-primary fw-semibold ms-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <i class="fa-solid fa-book-open"></i>
                 See All Projects
               </a>
             </div>
           </div>
           <div
-            class="col-lg-3"
-            style="margin-top: -200px; margin-right: 100px"
+            class="col-lg-3 ms-8"
+            style="margin-top: -200px"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="500"
           >
-            <div class="hero-video-btn text-lg-end">
+            <div
+              class="hero-video-btn text-lg-end text-sm-left"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               <a href="images/video/car_video.mp4" class="video-play">
                 <i class="fa-brands fa-youtube"></i>
               </a>
@@ -205,9 +229,19 @@
       <div class="row justify-content-center z-1">
         <div class="col-xl-8 col-lg-11">
           <div class="section-title text-center">
-            <span class="sub-title text-secondary fw-bold">ABOUT DAXX</span>
+            <span
+              class="sub-title text-secondary fw-bold"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              >ABOUT DAXX</span
+            >
           </div>
-          <div class="about-logo-icon">
+          <div
+            class="about-logo-icon"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            style="margin-left: -14rem"
+          >
             <img
               src="images/about-img.png"
               class="decoration position-absolute"
@@ -216,14 +250,22 @@
           </div>
         </div>
         <div class="col-xl-8 col-lg-11 position-relative">
-          <div class="section-title mt-5">
-            <h2 class="fw-bold" style="font-size: 45px">
+          <div
+            class="section-title mt-5"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h2 class="fw-bold text-center">
               DAXX is a modern residential complex in your city
             </h2>
           </div>
         </div>
         <div class="col-xl-6 col-lg-8 mb-5">
-          <div class="section-title text-center">
+          <div
+            class="section-title text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <p class="lead fs-bold mt-5 lh-sm text-start">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
@@ -239,7 +281,11 @@
       <div class="container">
         <div class="row d-flex justify-content-between">
           <div class="col-lg-5">
-            <div class="introducing-left-image">
+            <div
+              class="introducing-left-image"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <img
                 src="images/intro-img.jpg"
                 alt=""
@@ -251,7 +297,11 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-xl-8">
-                <div class="introducing-right-content mt-5">
+                <div
+                  class="introducing-right-content mt-5"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <div class="section-title mb-4">
                     <h3 style="font-size: 30px">
                       Location, Community, Quality Living. It Starts Here!
@@ -269,7 +319,11 @@
                 </div>
               </div>
             </div>
-            <div class="introducing-right-image mt-8">
+            <div
+              class="introducing-right-image mt-8"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <img src="images/intro-img-right.jpg" alt="" class="img-fluid" />
               <a href="images/video/car_video.mp4" class="video-play">
                 <i class="bi bi-gem"></i>
@@ -285,7 +339,11 @@
       <div class="container">
         <div class="row position-relative justify-content-center z-1">
           <div class="col-xl-7 col-lg-10">
-            <div class="blockquote-author mb-4 mx-auto">
+            <div
+              class="blockquote-author mb-4 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img
                 src="images/blockquote-author.jpg"
                 alt=""
@@ -294,7 +352,11 @@
               />
             </div>
 
-            <div class="blockquote-content">
+            <div
+              class="blockquote-content"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div class="blockquote-text mb-4">
                 Quis lectus nulla at volutpat diam. Sed nisi lacus sed viverra
                 tellus in hac. Enim nunc faucibus a pellentesque sit. Commodo
@@ -314,12 +376,20 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-6 col-lg-8 col-md-10">
-            <div class="video-content-part text-center">
+            <div
+              class="video-content-part text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <a href="images/video/car_video.mp4" class="video-play">
                 <i class="fa-brands fa-youtube"></i>
               </a>
-              <div class="section-title mt-5">
-                <h2 class="text-white" style="font-size: 50px">
+              <div
+                class="section-title mt-5"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <h2 class="text-white">
                   Discover the true definition of luxury
                 </h2>
               </div>
@@ -331,22 +401,36 @@
 
     <!-- timeline section -->
     <section class="timeline mt-5" id="timeline">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row mt-5">
           <div class="col-lg-12 mb-5">
-            <div class="section-title">
+            <div
+              class="section-title"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <span class="sub-title text-secondary fw-bold fs-6"
                 >TIMELINE</span
               >
             </div>
           </div>
           <div class="col-md-6">
-            <h1 class="w-100" style="font-size: 45px">
-              Where innovation will inspire you
-            </h1>
+            <div class="section-title">
+              <h1
+                class="w-100 xl-text"
+                data-aos="fade-right"
+                data-aos-delay="200"
+              >
+                Where innovation will inspire you
+              </h1>
+            </div>
           </div>
           <div class="col-md-6">
-            <p class="fw-normal lh-sm fs-5">
+            <p
+              class="fw-normal lh-sm fs-5"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
               dignissim diam quis enim lobortis.
@@ -356,7 +440,11 @@
         <!-- slider -->
         <div class="row align-items-center mt-5">
           <div class="col-lg-7">
-            <div class="timeline-images">
+            <div
+              class="timeline-images"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <img
                 src="images/timeline/timeline1.jpg"
                 decoding="async"
@@ -408,7 +496,11 @@
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="timeline-content">
+            <div
+              class="timeline-content"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <div class="timeline-item">
                 <div class="icon"></div>
                 <div class="content">
@@ -475,14 +567,25 @@
     <section id="apartments" class="apartment mt-8">
       <div class="container">
         <!-- apartment info section -->
-        <div class="section-title text-center">
-          <span class="sub-title text-secondary fw-bold fs-6 text-uppercase"
+        <div
+          class="section-title text-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <span
+            class="sub-title text-secondary fw-bold fs-6 text-uppercase"
+            data-aos="fade-up"
+            data-aos-delay="400"
             >Apartments</span
           >
-          <h2 class="fw-bold fs-1 mt-4 mx-auto" style="width: 400px">
+          <h2 class="fw-bold fs-1 mt-5 mx-auto" style="width: 400px">
             Home is where the amenities are
           </h2>
-          <p class="mt-4 fw-semibold w-50 mx-auto">
+          <p
+            class="mt-4 fw-semibold mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
             amet.
@@ -490,35 +593,42 @@
         </div>
         <!-- tab selectors-->
         <ul class="tab-style-one nav nav-fill mb-5 mt-5">
-          <li class="nav-item text-center">
+          <li
+            class="nav-item text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <a
-              class="nav-link fs-5 active text-dark"
+              class="nav-link fs-5 active"
               data-bs-toggle="tab"
               href="#apart-tap1"
               >One Room</a
             >
           </li>
-          <li class="nav-item text-center">
-            <a
-              class="nav-link fs-5 text-dark"
-              data-bs-toggle="tab"
-              href="#apart-tap2"
+          <li
+            class="nav-item text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <a class="nav-link fs-5" data-bs-toggle="tab" href="#apart-tap2"
               >Two Room</a
             >
           </li>
-          <li class="nav-item text-center">
-            <a
-              class="nav-link fs-5 text-dark"
-              data-bs-toggle="tab"
-              href="#apart-tap3"
+          <li
+            class="nav-item text-center"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <a class="nav-link fs-5" data-bs-toggle="tab" href="#apart-tap3"
               >Three Rooms</a
             >
           </li>
-          <li class="nav-item text-center">
-            <a
-              class="nav-link fs-5 text-dark"
-              data-bs-toggle="tab"
-              href="#apart-tap4"
+          <li
+            class="nav-item text-center"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
+            <a class="nav-link fs-5" data-bs-toggle="tab" href="#apart-tap4"
               >Four Rooms</a
             >
           </li>
@@ -528,7 +638,11 @@
           <div class="tab-pane fade active show" id="apart-tap1">
             <div class="row g-5 align-items-center">
               <div class="col-lg-8">
-                <div class="apartment-image mb-5">
+                <div
+                  class="apartment-image mb-5"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   <img
                     src="images/apartment_images/apartment_img_1.png"
                     alt="apartment Image 1"
@@ -537,7 +651,11 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="apartment-content">
+                <div
+                  class="apartment-content"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
                   <h6>From</h6>
                   <span class="big-text">64m</span>
                   <p>
@@ -559,7 +677,11 @@
           <div class="tab-pane fade" id="apart-tap2">
             <div class="row g-5 align-items-center">
               <div class="col-lg-4">
-                <div class="apartment-content">
+                <div
+                  class="apartment-content"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
                   <h6>From</h6>
                   <span class="big-text">64m</span>
                   <p>
@@ -577,7 +699,11 @@
                 </div>
               </div>
               <div class="col-lg-8">
-                <div class="apartment-image mb-5">
+                <div
+                  class="apartment-image mb-5"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   <img
                     src="images/apartment_images/apartment_img_1.png"
                     alt="apartment Image 1"
@@ -590,7 +716,11 @@
           <div class="tab-pane fade" id="apart-tap3">
             <div class="row g-5 align-items-center">
               <div class="col-lg-8">
-                <div class="apartment-image mb-5">
+                <div
+                  class="apartment-image mb-5"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   <img
                     src="images/apartment_images/apartment_img_1.png"
                     alt="apartment Image 1"
@@ -599,7 +729,11 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="apartment-content">
+                <div
+                  class="apartment-content"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
                   <h6>From</h6>
                   <span class="big-text">64m</span>
                   <p>
@@ -621,7 +755,11 @@
           <div class="tab-pane fade" id="apart-tap4">
             <div class="row g-5 align-items-center">
               <div class="col-lg-4">
-                <div class="apartment-content">
+                <div
+                  class="apartment-content"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
                   <h6>From</h6>
                   <span class="big-text">64m</span>
                   <p>
@@ -639,7 +777,11 @@
                 </div>
               </div>
               <div class="col-lg-8">
-                <div class="apartment-image mb-5">
+                <div
+                  class="apartment-image mb-5"
+                  data-aos="fade-right"
+                  data-aos-delay="200"
+                >
                   <img
                     src="images/apartment_images/apartment_img_1.png"
                     alt="apartment Image 1"
@@ -659,7 +801,7 @@
       class="imageSlider z-1 pb-5 mt-5 position-relative"
     >
       <div class="container">
-        <div class="slideshow-images">
+        <div class="slideshow-images" data-aos="fade-left" data-aos-delay="200">
           <img
             src="images/slide1.jpg"
             alt="slide show img 1"
@@ -697,15 +839,15 @@
       <div class="container">
         <div class="row g-4">
           <div class="col-xl-6 col-lg-8">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up" data-aos-delay="200">
               <span class="sub-title mb-5 fw-semibold">BENEFITS</span>
-              <h2 style="font-size: 60px">
+              <h2 class="xl-text">
                 Apartments tailored to your highest standards
               </h2>
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-6 col-small">
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
               <div
                 class="icon py-3 text-center mb-3 border border-secondary"
                 style="width: 80px"
@@ -722,7 +864,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-6 col-small">
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
               <div
                 class="icon py-3 text-center mb-3 border border-secondary"
                 style="width: 80px"
@@ -739,7 +881,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-6 col-small">
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
               <div
                 class="icon py-3 text-center mb-3 border border-secondary"
                 style="width: 80px"
@@ -758,7 +900,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-6 col-small">
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
               <div
                 class="icon py-3 text-center mb-3 border border-secondary"
                 style="width: 80px"
@@ -775,7 +917,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-6 col-small">
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
               <div
                 class="icon py-3 text-center mb-3 border border-secondary"
                 style="width: 80px"
@@ -792,7 +934,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-6 col-small">
-            <div class="benefit-item">
+            <div class="benefit-item" data-aos="fade-up" data-aos-delay="400">
               <div
                 class="icon py-3 text-center mb-3 border border-secondary"
                 style="width: 80px"
@@ -824,7 +966,11 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-3 col-lg-4 col-6">
-            <div class="counter-item position-relative">
+            <div
+              class="counter-item position-relative"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <span
                 class="counter-count lh-sm text-secondary xl-text fw-semibold text-break"
                 >264</span
@@ -833,7 +979,11 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-6">
-            <div class="counter-item position-relative">
+            <div
+              class="counter-item position-relative"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <span
                 class="counter-count lh-sm text-secondary xl-text fw-semibold text-break"
                 >12-21</span
@@ -842,7 +992,11 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-6">
-            <div class="counter-item position-relative">
+            <div
+              class="counter-item position-relative"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <span
                 class="counter-count lh-sm text-secondary xl-text fw-semibold text-break"
                 >2100<sup>m2</sup></span
@@ -851,7 +1005,11 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-6">
-            <div class="counter-item position-relative">
+            <div
+              class="counter-item position-relative"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <span
                 class="counter-count lh-sm text-secondary xl-text fw-semibold text-break"
                 >979</span
@@ -868,7 +1026,7 @@
       <div class="container">
         <div class="row gx-5 align-items-center">
           <div class="col-lg-8">
-            <div class="feature-image">
+            <div class="feature-image" data-aos="fade-up" data-aos-delay="200">
               <img
                 src="images/features.jpg"
                 decoding="async"
@@ -912,7 +1070,11 @@
             </div>
           </div>
           <div class="col-lg-4 mt-5">
-            <div class="feature-content responsive-feature">
+            <div
+              class="feature-content responsive-feature"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <div class="feature-content-item" style="width: 427px">
                 <h5>
                   Modern conveniences & entertainment, all within your reach
@@ -956,7 +1118,11 @@
                 </p>
               </div>
             </div>
-            <div class="navi-pagi-area mt-2">
+            <div
+              class="navi-pagi-area mt-2"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <button
                 class="feature-prev btn btn-outline-primary rounded-pill px-3 me-2"
               >
@@ -979,24 +1145,28 @@
       <div class="container">
         <div class="row d-flex justify-content-between">
           <div class="col-lg-12">
-            <div class="section-title">
+            <div
+              class="section-title"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <span class="sub-title mb-5 text-uppercase text-secondary fw-bold"
                 >Developer</span
               >
             </div>
           </div>
           <div class="col-lg-5">
-            <h1 class="" style="font-size: 45px">
+            <h1 data-aos="fade-left" data-aos-delay="200">
               Our latest completed project
             </h1>
           </div>
           <div class="col-lg-6">
-            <p class="fw-semibold">
+            <p class="mt-2" data-aos="fade-right" data-aos-delay="200">
               Lorem ipsum dolor Lorem ipsum dolor sit amet. sit amet consectetur
               adipisicing elit. Commodi veritatis aliquam nisi ut natus quas.
               Lorem ipsum dolor sit amet.
             </p>
-            <div class="socials">
+            <div class="socials" data-aos="fade-right" data-aos-delay="200">
               <b
                 ><a
                   href="lohatheme.com"
@@ -1004,7 +1174,7 @@
                   >lohatheme.com</a
                 ></b
               >
-              <div class="social-style-one d-inline ms-3">
+              <div class="social-style-onea d-inline ms-3">
                 <a href="https://facebook.com"
                   ><i
                     class="fa-brands fa-facebook fs-4 border rounded-pill p-2"
@@ -1026,7 +1196,7 @@
         </div>
         <div class="row mt-6">
           <div class="col-xl-4 col-md-6">
-            <div class="developer-item">
+            <div class="developer-item" data-aos="fade-up" data-aos-delay="200">
               <img
                 src="images/developer/developer1.jpg"
                 decoding="async"
@@ -1055,7 +1225,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-md-6">
-            <div class="developer-item">
+            <div class="developer-item" data-aos="fade-up" data-aos-delay="400">
               <img
                 src="images/developer/developer2.jpg"
                 decoding="async"
@@ -1084,7 +1254,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-md-6">
-            <div class="developer-item">
+            <div class="developer-item" data-aos="fade-up" data-aos-delay="600">
               <img
                 src="images/developer/developer3.jpg"
                 decoding="async"
@@ -1113,7 +1283,11 @@
             </div>
           </div>
           <div class="col-lg-12">
-            <a href="" class="btn btn-primary fw-semibold px-5"
+            <a
+              href=""
+              class="btn btn-primary fw-semibold px-5"
+              data-aos="fade-up"
+              data-aos-delay="200"
               >See all Projects</a
             >
           </div>
@@ -1127,27 +1301,34 @@
       <div class="container">
         <div class="row justify-content-center z-1">
           <div class="col-xl-7 col-lg-8">
-            <div class="section-title text-center">
+            <div
+              class="section-title text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <span class="sub-title mb-5 text-uppercase text-secondary fw-bold"
                 >Reviews</span
               >
 
-              <h2 style="font-size: 50px; width: 700px" class="mx-auto">
-                What our happy customers say about DAXX
-              </h2>
+              <h2 class="mx-auto">What our happy customers say about DAXX</h2>
             </div>
           </div>
         </div>
-        <div class="testimonial-slider text-center mt-5 mb-5">
+        <div
+          class="testimonial-slider text-center mt-5 mb-5"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <div class="testimonial-item">
             <div class="quote-icon">
-              <i class="fa-solid fa-quote-left text-primary fs-1"></i>
+              <i class="fa-solid fa-quote-left fs-1"></i>
             </div>
             <div class="author-text w-75 mx-auto">
               <p class="text-secondary fs-4 fw-semibold mt-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum ab ullam facere dicta alias, reiciendis repellat
-                culpa amet corrupti recusandae?
+                Lorem ipsum dolor sit amet consequi sint! Sapiente ratione dolor
+                rerum laborum numquam, autem ab? Recusandae earum ectetur
+                adipisicing elit. Voluptatum ab ullam facere dicta alias,
+                reiciendis repellat culpa amet corrupti recusandae?
               </p>
             </div>
             <h6 class="fw-bold fs-4 mt-5">Philip Demarco</h6>
@@ -1157,7 +1338,7 @@
           </div>
           <div class="testimonial-item">
             <div class="quote-icon">
-              <i class="fa-solid fa-quote-right text-primary fs-1"></i>
+              <i class="fa-solid fa-quote-right fs-1"></i>
             </div>
             <div class="author-text w-75 mx-auto">
               <p class="text-secondary fs-4 fw-semibold mt-3">
@@ -1183,7 +1364,11 @@
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-4 col-xl-3 col-6">
-            <div class="client-logo-item">
+            <div
+              class="client-logo-item"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img
                 src="images/client-logos/client-logo1.png"
                 alt=""
@@ -1192,7 +1377,11 @@
             </div>
           </div>
           <div class="col-lg-4 col-xl-3 col-6">
-            <div class="client-logo-item">
+            <div
+              class="client-logo-item"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img
                 src="images/client-logos/client-logo2.png"
                 alt=""
@@ -1201,7 +1390,11 @@
             </div>
           </div>
           <div class="col-lg-4 col-xl-3 col-6">
-            <div class="client-logo-item">
+            <div
+              class="client-logo-item"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img
                 src="images/client-logos/client-logo3.png"
                 alt=""
@@ -1210,7 +1403,11 @@
             </div>
           </div>
           <div class="col-lg-4 col-xl-3 col-6">
-            <div class="client-logo-item">
+            <div
+              class="client-logo-item"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <img
                 src="images/client-logos/client-logo4.png"
                 alt=""
@@ -1224,9 +1421,9 @@
 
     <!-- footer -->
     <footer class="main-footer position-relative z-1 mt-5" id="footer">
-      <div class="footer-top pt-6 pb-5">
+      <div class="footer-top pt-6">
         <div class="container">
-          <div class="row justify-content-center g-8">
+          <div class="row justify-content-center gx-8">
             <div class="col-xl-4 col-lg-7">
               <div class="section-title text-white mb-5">
                 <span
@@ -1286,7 +1483,7 @@
                 type="text"
                 name=""
                 placeholder="Phone"
-                style="width: 500px"
+                style="width: 500px; height: 50px"
                 class="border border-end"
               />
               <button class="btn btn-secondary px-4 border-start" type="submit">
@@ -1297,8 +1494,8 @@
           <hr style="opacity: 1" />
         </div>
       </div>
-      <div class="footer-bottom pt-5 pb-7">
-        <div class="container">
+      <div class="footer-bottom pt-6 pb-7">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xl-2 col-md-4">
               <div class="footer-logo">
@@ -1322,34 +1519,23 @@
               <div class="footer-socials text-center text-md-start">
                 <div class="social-style-one mb-5">
                   <a href="https://facebook.com"
-                    ><i
-                      class="fa-brands fa-facebook fs-5 border border-primary rounded-pill p-2"
-                    ></i
+                    ><i class="fa-brands fa-facebook"></i
                   ></a>
                   <a href="https://instagram.com"
-                    ><i
-                      class="fa-brands fa-instagram fs-5 border border-primary rounded-pill p-2 ms-3"
-                    ></i
+                    ><i class="fa-brands fa-instagram"></i
                   ></a>
                   <a href="https://linkedin.com"
-                    ><i
-                      class="fa-brands ms-3 fa-linkedin fs-5 border border-primary rounded-pill p-2"
-                    ></i
+                    ><i class="fa-brands fa-linkedin"></i
                   ></a>
                 </div>
               </div>
             </div>
             <div class="col-xl-3 col-md-8">
-              <div
-                class="copyright-area mb-5 text-xl-end text-center text-md-start"
-              >
-                <small style="font-size: 12px"
-                  >© 2024 DAX Residental Complex.All Rights Reserved /</small
-                >
+              <div class="copyright-area text-xl-end text-center text-md-start">
+                © 2024 DAX Residental Complex.All Rights Reserved >
                 <a
                   href="https://daxx.lohatheme.com/?p=111"
                   class="text-secondary text-decoration-none"
-                  style="font-size: 12px"
                   >Privacy Policy</a
                 >
                 /
@@ -1372,28 +1558,23 @@
     </button>
 
     <!-- Load jQuery first -->
+    <!-- 1. First load jQuery as it's a dependency for many other libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Load jQuery plugins and libraries dependent on jQuery -->
+    <!-- 2. Load Bootstrap (after jQuery) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- 3. Load jQuery plugins (after jQuery, before your custom code) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- Load Nice Select after jQuery -->
     <script src="/js/jquery.nice-select.js"></script>
 
-    <!-- Load Bootstrap and other libraries -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 4. Load AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Ensure no duplicate libraries (e.g., remove this duplicate imagesLoaded if not needed) -->
-    <!-- <script src="/js/imagesloaded.pkgd.min.js"></script> -->
-
-    <!-- Your custom scripts should come last, after all dependencies are loaded -->
+    <!-- 5. Your custom scripts last -->
     <script src="/js/script.js"></script>
     <script src="/js/script2.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

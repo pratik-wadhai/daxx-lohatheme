@@ -4,7 +4,7 @@
 
 .wpcf7 .screen-reader-response {
   position: absolute;
-  overflow: hidden;
+  // overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   height: 1px;
@@ -183,17 +183,31 @@ form.submitting .wpcf7-spinner {
   background-position: bottom;
 }
 
+@media only screen and (max-width: 576px) {
+  .corner-shapes-wrap {
+    height: 150px;
+  }
+  .banner-content {
+    margin-top: -122px !important;
+  }
+  .schedule-form-area {
+    margin-top: -15rem !important;
+  }
+}
+
 /*******************************************************/
 /******************* ## Schedule Form *******************/
 /*******************************************************/
 .schedule-form-image {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
 }
 
 @media only screen and (min-width: 992px) {
   .schedule-form-image {
     margin-right: -35%;
+  }
+  .schedule-form-area {
+    margin-top: 12rem !important;
   }
 }
 .schedule-form-part {
@@ -204,6 +218,10 @@ form.submitting .wpcf7-spinner {
 }
 
 @media only screen and (max-width: 575px) {
+  .schedule-form-area {
+    margin-top: 8rem !important;
+    gap: 7;
+  }
   .schedule-form-part {
     padding-left: 25px;
     padding-right: 25px;

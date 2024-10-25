@@ -16,6 +16,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/schedule_page.css" />
     <link
       rel="stylesheet"
@@ -41,10 +42,10 @@
     <!-- main header -->
     <header class="main-header">
       <div class="header-upper">
-        <div class="container clearfix">
-          <div class="header-inner position-relative d-flex align-item-center">
+        <div class="container-fluid clearfix">
+          <div class="header-inner position-relative d-flex align-items-center">
             <!-- logo -->
-            <div class="logo-outer my-auto" style="margin-left: -60px">
+            <div class="logo-outer my-auto">
               <div class="logo">
                 <a href="index.html">
                   <img src="images/logos/logo.png" alt="logo" title="logo" />
@@ -55,6 +56,16 @@
               <!-- main menu -->
               <nav class="main-menu navbar-expand-lg">
                 <div class="navbar-header py-10">
+                  <!-- mobile logo -->
+                  <div class="mobile-logo">
+                    <a href="index.html">
+                      <img
+                        src="images/logos/logo-daxx.png"
+                        alt="Logo"
+                        title="Logo"
+                      />
+                    </a>
+                  </div>
                   <!-- toggle button -->
                   <button
                     class="navbar-toggle"
@@ -153,13 +164,13 @@
               </nav>
             </div>
             <!-- menu btns -->
-            <div class="menu-btns">
+            <div class="menu-btns my-auto">
               <a
                 href="index.html"
                 class="theme-btn btn btn-secondary text-white px-2 py-1"
               >
                 <small>Ask a Question</small>
-                <i class="bi bi-chat-dots"></i>
+                <i class="fa-regular fa-comment-dots"></i>
               </a>
             </div>
           </div>
@@ -173,9 +184,13 @@
       <div class="container pb-5">
         <div class="row align-items-center justify-content-between">
           <div class="col-xl-8 col-lg-12">
-            <div class="banner-content mb-8 py-5">
+            <div
+              class="banner-content mb-8 py-5"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb" data-aos="fade-up" data-aos-delay="400">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
                     Schedule
@@ -190,11 +205,15 @@
     </section>
 
     <!-- schedule form area -->
-    <section class="schedule-form-area mt-8">
+    <section class="schedule-form-area">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-xl-6 col-lg-4">
-            <div class="schedule-form-image">
+          <div class="col-xl-6 col-lg-4 mb-4">
+            <div
+              class="schedule-form-image"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <img
                 src="images/schedule-form-bg.jpg"
                 decoding="async"
@@ -204,7 +223,11 @@
             </div>
           </div>
           <div class="col-xl-6 col-lg-8 border border-1">
-            <div class="schedule-form-part">
+            <div
+              class="schedule-form-part"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <div class="section-title mb-6">
                 <h3>Sign up for a consultation right now</h3>
                 <br />
@@ -259,57 +282,63 @@
                           data-name="radio-130"
                           ><span class="wpcf7-form-control wpcf7-radio"
                             ><span
-                              class="wpcf7-list-item first border border-1 p-2 fw-bold fs-5"
+                              class="wpcf7-list-item first border border-1 p-2 fw-bold"
                               ><input
                                 type="radio"
                                 name="radio-130"
                                 value="Mon."
                                 checked="checked"
+                                style="width: auto !important"
                               /><span class="wpcf7-list-item-label"
                                 >Mon.</span
                               ></span
                             ><span
-                              class="wpcf7-list-item border border-1 p-2 fw-bold fs-5"
+                              class="wpcf7-list-item border border-1 p-2 fw-bold"
                               ><input
                                 type="radio"
                                 name="radio-130"
                                 value="Tue."
+                                style="width: auto !important"
                               /><span class="wpcf7-list-item-label"
                                 >Tue.</span
                               ></span
                             ><span
-                              class="wpcf7-list-item border border-1 p-2 fw-bold fs-5"
+                              class="wpcf7-list-item border border-1 p-2 fw-bold"
                               ><input
                                 type="radio"
                                 name="radio-130"
                                 value="Wed."
+                                style="width: auto !important"
                               /><span class="wpcf7-list-item-label"
                                 >Wed.</span
                               ></span
                             ><span
-                              class="wpcf7-list-item border border-1 p-2 fw-bold fs-5"
+                              class="wpcf7-list-item border border-1 p-2 fw-bold"
                               ><input
                                 type="radio"
                                 name="radio-130"
                                 value="Thu."
+                                style="width: auto !important"
                               /><span class="wpcf7-list-item-label"
                                 >Thu.</span
                               ></span
                             ><span
-                              class="wpcf7-list-item border border-1 p-2 fw-bold fs-5"
+                              class="wpcf7-list-item border border-1 p-2 fw-bold"
                               ><input
                                 type="radio"
                                 name="radio-130"
                                 value="Fri."
+                                style="width: auto !important"
                               /><span class="wpcf7-list-item-label"
                                 >Fri.</span
                               ></span
                             ><span
-                              class="wpcf7-list-item last border border-1 p-2 fw-bold fs-5 mt-3"
+                              class="wpcf7-list-item last border border-1 p-2 fw-bold mt-3"
                               ><input
                                 type="radio"
                                 name="radio-130"
                                 value="Sat."
+                                style="width: auto !important"
                               /><span class="wpcf7-list-item-label"
                                 >Sat.</span
                               ></span
@@ -406,11 +435,12 @@
         >
       </div>
     </section>
+
     <!-- footer -->
     <footer class="main-footer position-relative z-1" id="footer">
       <div class="footer-top pt-6 pb-5">
         <div class="container">
-          <div class="row justify-content-center g-8">
+          <div class="row justify-content-center gx-8">
             <div class="col-xl-4 col-lg-7">
               <div class="section-title text-white mb-5">
                 <span
@@ -548,24 +578,24 @@
     <button id="to-top" class="to-top-btn border rounded">
       <i class="fa-solid fa-angles-up text-white"></i>
     </button>
+
     <!-- Load jQuery first -->
+    <!-- 1. First load jQuery as it's a dependency for many other libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Load jQuery plugins and libraries dependent on jQuery -->
+    <!-- 2. Load Bootstrap (after jQuery) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- 3. Load jQuery plugins (after jQuery, before your custom code) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- Load Nice Select after jQuery -->
     <script src="/js/jquery.nice-select.js"></script>
 
-    <!-- Load Bootstrap and other libraries -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 4. Load AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Ensure no duplicate libraries (e.g., remove this duplicate imagesLoaded if not needed) -->
-    <!-- <script src="/js/imagesloaded.pkgd.min.js"></script> -->
-
-    <!-- Your custom scripts should come last, after all dependencies are loaded -->
+    <!-- 5. Your custom scripts last -->
     <script src="/js/script.js"></script>
     <script src="/js/script2.js"></script>
   </body>

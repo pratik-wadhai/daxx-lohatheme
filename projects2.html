@@ -40,10 +40,10 @@
     <!-- main header -->
     <header class="main-header">
       <div class="header-upper">
-        <div class="container clearfix">
-          <div class="header-inner position-relative d-flex align-item-center">
+        <div class="container-fluid clearfix">
+          <div class="header-inner position-relative d-flex align-items-center">
             <!-- logo -->
-            <div class="logo-outer my-auto" style="margin-left: -60px">
+            <div class="logo-outer my-auto">
               <div class="logo">
                 <a href="index.html">
                   <img src="images/logos/logo.png" alt="logo" title="logo" />
@@ -54,6 +54,16 @@
               <!-- main menu -->
               <nav class="main-menu navbar-expand-lg">
                 <div class="navbar-header py-10">
+                  <!-- mobile logo -->
+                  <div class="mobile-logo">
+                    <a href="index.html">
+                      <img
+                        src="images/logos/logo-daxx.png"
+                        alt="Logo"
+                        title="Logo"
+                      />
+                    </a>
+                  </div>
                   <!-- toggle button -->
                   <button
                     class="navbar-toggle"
@@ -152,13 +162,13 @@
               </nav>
             </div>
             <!-- menu btns -->
-            <div class="menu-btns">
+            <div class="menu-btns my-auto">
               <a
                 href="index.html"
                 class="theme-btn btn btn-secondary text-white px-2 py-1"
               >
                 <small>Ask a Question</small>
-                <i class="bi bi-chat-dots"></i>
+                <i class="fa-regular fa-comment-dots"></i>
               </a>
             </div>
           </div>
@@ -167,21 +177,26 @@
     </header>
 
     <!--  / hero section -->
-    <section class="banner-area-projects py-8 corner-shapes-wrap">
-      <div class="corner-shapes"></div>
-      <div class="container pb-5">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-xl-8 col-lg-12">
-            <div class="banner-content mb-8 py-5">
-              <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Projects
-                  </li>
-                </ol>
-              </nav>
-              <h1 class="text-white">Our projects</h1>
+    <section class="banner-area-projects">
+      <div class="py-8 corner-shapes-wrap">
+        <div class="corner-shapes"></div>
+        <div class="container pb-5">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-xl-8 col-lg-12">
+              <div class="banner-content mb-8 py-5">
+                <nav
+                  style="--bs-breadcrumb-divider: ''"
+                  aria-label="breadcrumb"
+                >
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Projects
+                    </li>
+                  </ol>
+                </nav>
+                <h1 class="text-white">Our projects</h1>
+              </div>
             </div>
           </div>
         </div>
@@ -324,7 +339,7 @@
     <footer class="main-footer position-relative z-1 mt-5" id="footer">
       <div class="footer-top pt-6 pb-5">
         <div class="container">
-          <div class="row justify-content-center g-8">
+          <div class="row justify-content-center gx-8">
             <div class="col-xl-4 col-lg-7">
               <div class="section-title text-white mb-5">
                 <span
@@ -464,23 +479,22 @@
     </button>
 
     <!-- Load jQuery first -->
+    <!-- 1. First load jQuery as it's a dependency for many other libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Load jQuery plugins and libraries dependent on jQuery -->
+    <!-- 2. Load Bootstrap (after jQuery) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- 3. Load jQuery plugins (after jQuery, before your custom code) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- Load Nice Select after jQuery -->
     <script src="/js/jquery.nice-select.js"></script>
 
-    <!-- Load Bootstrap and other libraries -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 4. Load AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Ensure no duplicate libraries (e.g., remove this duplicate imagesLoaded if not needed) -->
-    <!-- <script src="/js/imagesloaded.pkgd.min.js"></script> -->
-
-    <!-- Your custom scripts should come last, after all dependencies are loaded -->
+    <!-- 5. Your custom scripts last -->
     <script src="/js/script.js"></script>
     <script src="/js/script2.js"></script>
   </body>

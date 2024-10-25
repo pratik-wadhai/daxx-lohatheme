@@ -19,6 +19,10 @@
   align-items: center;
 }
 
+.contact-area .section-title h2 {
+  font-size: 55px;
+}
+
 .contact-info-item .icon {
   -webkit-box-flex: 0;
   -ms-flex: none;
@@ -32,6 +36,11 @@
   border: 1px solid #d9dfe7;
 }
 
+@media only screen and (max-width: 576px) {
+  .contact-area .section-title h2 {
+    font-size: 30px !important;
+  }
+}
 @media only screen and (max-width: 375px) {
   .contact-info-item .icon {
     width: 60px;

@@ -16,6 +16,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -40,10 +41,10 @@
     <!-- main header -->
     <header class="main-header">
       <div class="header-upper">
-        <div class="container clearfix">
-          <div class="header-inner position-relative d-flex align-item-center">
+        <div class="container-fluid clearfix">
+          <div class="header-inner position-relative d-flex align-items-center">
             <!-- logo -->
-            <div class="logo-outer my-auto" style="margin-left: -60px">
+            <div class="logo-outer my-auto">
               <div class="logo">
                 <a href="index.html">
                   <img src="images/logos/logo.png" alt="logo" title="logo" />
@@ -54,6 +55,16 @@
               <!-- main menu -->
               <nav class="main-menu navbar-expand-lg">
                 <div class="navbar-header py-10">
+                  <!-- mobile logo -->
+                  <div class="mobile-logo">
+                    <a href="index.html">
+                      <img
+                        src="images/logos/logo-daxx.png"
+                        alt="Logo"
+                        title="Logo"
+                      />
+                    </a>
+                  </div>
                   <!-- toggle button -->
                   <button
                     class="navbar-toggle"
@@ -152,13 +163,13 @@
               </nav>
             </div>
             <!-- menu btns -->
-            <div class="menu-btns">
+            <div class="menu-btns my-auto">
               <a
                 href="index.html"
                 class="theme-btn btn btn-secondary text-white px-2 py-1"
               >
                 <small>Ask a Question</small>
-                <i class="bi bi-chat-dots"></i>
+                <i class="fa-regular fa-comment-dots"></i>
               </a>
             </div>
           </div>
@@ -173,12 +184,20 @@
         <div class="container pb-5">
           <div class="row align-items-center justify-content-between">
             <div class="col-xl-8 col-lg-12">
-              <div class="banner-content mb-8 py-5">
+              <div
+                class="banner-content mb-8 py-5"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <nav
                   style="--bs-breadcrumb-divider: ''"
                   aria-label="breadcrumb"
                 >
-                  <ol class="breadcrumb">
+                  <ol
+                    class="breadcrumb"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
                       Projects
@@ -196,11 +215,11 @@
     </section>
 
     <!-- cities area -->
-    <section class="cities-area position-relative z-2 pt-6 pb-5">
+    <section class="cities-area position-relative z-1 pt-6 pb-5">
       <div class="container-fluid">
         <div class="row justify-content-between">
           <div class="col-lg-12">
-            <div class="section-title">
+            <div class="section-title" data-aos="fade-up" data-aos-delay="200">
               <span
                 class="sub-title mb-5 text-secondary text-uppercase fw-bold fs-5"
                 >Cities</span
@@ -208,7 +227,11 @@
             </div>
           </div>
           <div class="col-xl-5 col-lg-7">
-            <div class="section-title mb-5">
+            <div
+              class="section-title mb-5"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <h2 style="font-size: 60px" class="text-white">
                 <span class="text-secondary">8 cities </span>
                 in which we created comfort
@@ -216,7 +239,7 @@
             </div>
           </div>
           <div class="col-lg-4 mb-5">
-            <div class="cities-select">
+            <div class="cities-select" data-aos="fade-up" data-aos-delay="200">
               <h3 class="text-white" style="font-size: 40px">Select city:</h3>
 
               <select id="my-select">
@@ -237,11 +260,15 @@
     </section>
 
     <!-- projects area  -->
-    <section class="projects-area position-relative z-1 mt-5 pb-5">
+    <section class="projects-area position-relative mt-5 pb-5">
       <div class="container-fluid">
         <div class="row justify-content-between">
           <div class="col-lg-12">
-            <div class="blog-active section-title">
+            <div
+              class="blog-active section-title"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <h2 class="item item1">All Projects</h2>
               <h2 class="item item2 chicago">Chicago</h2>
               <h2 class="item item2 detroit">Detroit</h2>
@@ -254,12 +281,9 @@
             </div>
           </div>
         </div>
-        <div
-          class="row blog-active mt-6"
-          style="position: relative; height: 616.656px"
-        >
+        <div class="row blog-active mt-6">
           <div class="col-xl-4 col-md-6 item detroit houston">
-            <div class="developer-item">
+            <div class="developer-item" data-aos="fade-up" data-aos-delay="300">
               <img
                 src="images/developer/developer1.jpg"
                 decoding="async"
@@ -288,7 +312,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-md-6 item detroit chicago">
-            <div class="developer-item">
+            <div class="developer-item" data-aos="fade-up" data-aos-delay="300">
               <img
                 src="images/developer/developer2.jpg"
                 decoding="async"
@@ -318,7 +342,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-md-6 item memphis nashville houston">
-            <div class="developer-item">
+            <div class="developer-item" data-aos="fade-up" data-aos-delay="300">
               <img
                 src="images/developer/developer3.jpg"
                 decoding="async"
@@ -349,7 +373,7 @@
           <div
             class="col-xl-4 col-md-6 item nashville new-york philadelphia seattle"
           >
-            <div class="developer-item">
+            <div class="developer-item" data-aos="fade-up" data-aos-delay="300">
               <img
                 src="images/developer/developer4.jpg"
                 decoding="async"
@@ -378,7 +402,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-md-6 item memphis seattle">
-            <div class="developer-item">
+            <div class="developer-item" data-aos="fade-up" data-aos-delay="300">
               <img
                 src="images/developer/developer5.jpg"
                 decoding="async"
@@ -407,7 +431,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-md-6 item chicago nashville new-york">
-            <div class="developer-item">
+            <div class="developer-item" data-aos="fade-up" data-aos-delay="300">
               <img
                 src="images/developer/developer6.jpg"
                 decoding="async"
@@ -438,8 +462,9 @@
         </div>
         <div class="col-lg-12">
           <ul
-            class="pagination mt-40 flex-wrap justify-content-center wow fadeInUp delay-0-2s animated"
-            style="visibility: visible; animation-name: fadeInUp"
+            class="pagination mt-40 flex-wrap justify-content-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
           >
             <li class="page-item">
               <a
@@ -477,7 +502,7 @@
     <footer class="main-footer position-relative z-1 mt-5" id="footer">
       <div class="footer-top pt-6 pb-5">
         <div class="container">
-          <div class="row justify-content-center g-8">
+          <div class="row justify-content-center gx-8">
             <div class="col-xl-4 col-lg-7">
               <div class="section-title text-white mb-5">
                 <span
@@ -617,23 +642,22 @@
     </button>
 
     <!-- Load jQuery first -->
+    <!-- 1. First load jQuery as it's a dependency for many other libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Load jQuery plugins and libraries dependent on jQuery -->
+    <!-- 2. Load Bootstrap (after jQuery) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- 3. Load jQuery plugins (after jQuery, before your custom code) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- Load Nice Select after jQuery -->
     <script src="/js/jquery.nice-select.js"></script>
 
-    <!-- Load Bootstrap and other libraries -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 4. Load AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Ensure no duplicate libraries (e.g., remove this duplicate imagesLoaded if not needed) -->
-    <!-- <script src="/js/imagesloaded.pkgd.min.js"></script> -->
-
-    <!-- Your custom scripts should come last, after all dependencies are loaded -->
+    <!-- 5. Your custom scripts last -->
     <script src="/js/script.js"></script>
     <script src="/js/script2.js"></script>
   </body>

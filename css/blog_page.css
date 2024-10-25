@@ -8,6 +8,21 @@
   background-position: bottom;
 }
 
+.blog-area {
+  margin-top: 6rem !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .banner-area-blog {
+    height: 100px;
+  }
+  .banner-area-blog .banner-content {
+    margin-top: -7rem;
+  }
+  .blog-area {
+    margin-top: 0 !important;
+  }
+}
 .blog-meta {
   display: flex;
   font-size: 14px;

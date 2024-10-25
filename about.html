@@ -28,6 +28,7 @@
       referrerpolicy="no-referrer"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/about_page.css" />
@@ -40,10 +41,10 @@
     <!-- main header -->
     <header class="main-header">
       <div class="header-upper">
-        <div class="container clearfix">
-          <div class="header-inner position-relative d-flex align-item-center">
+        <div class="container-fluid clearfix">
+          <div class="header-inner position-relative d-flex align-items-center">
             <!-- logo -->
-            <div class="logo-outer my-auto" style="margin-left: -60px">
+            <div class="logo-outer my-auto">
               <div class="logo">
                 <a href="index.html">
                   <img src="images/logos/logo.png" alt="logo" title="logo" />
@@ -54,6 +55,16 @@
               <!-- main menu -->
               <nav class="main-menu navbar-expand-lg">
                 <div class="navbar-header py-10">
+                  <!-- mobile logo -->
+                  <div class="mobile-logo">
+                    <a href="index.html">
+                      <img
+                        src="images/logos/logo-daxx.png"
+                        alt="Logo"
+                        title="Logo"
+                      />
+                    </a>
+                  </div>
                   <!-- toggle button -->
                   <button
                     class="navbar-toggle"
@@ -152,13 +163,13 @@
               </nav>
             </div>
             <!-- menu btns -->
-            <div class="menu-btns">
+            <div class="menu-btns my-auto">
               <a
                 href="index.html"
                 class="theme-btn btn btn-secondary text-white px-2 py-1"
               >
                 <small>Ask a Question</small>
-                <i class="bi bi-chat-dots"></i>
+                <i class="fa-regular fa-comment-dots"></i>
               </a>
             </div>
           </div>
@@ -172,9 +183,13 @@
       <div class="container pb-5">
         <div class="row align-items-center justify-content-between">
           <div class="col-xl-8 col-lg-12">
-            <div class="banner-content mb-8 py-5">
+            <div
+              class="banner-content mb-8 py-5"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb" data-aos="fade-up" data-aos-delay="400">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
                     About
@@ -194,14 +209,21 @@
       <div class="container">
         <div class="row gx-5 align-items-center">
           <div class="col-xl-6 col-lg-5">
-            <div class="section-title">
-              <span class="sub-title text-secondary fw-bold fs-3"
+            <div class="section-title" data-aos="fade-up" data-aos-delay="300">
+              <span
+                class="sub-title text-secondary fw-bold fs-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
                 >What we do</span
               >
-              <h2 style="font-size: 50px" class="w-75 mt-5">
+              <h2 class="mt-5">
                 Quality construction. Honest service. Great value.
               </h2>
-              <div class="section-text mt-5 fs-5">
+              <div
+                class="section-text mt-5 fs-5"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <p>
                   Malesuada pellentesque elit eget gravida. Elit sed vulputate
                   mi sit amet mauris commodo. In hac habitasse platea dictumst.
@@ -214,7 +236,11 @@
           <div class="col-xl-6 col-lg-7">
             <div class="row">
               <div class="col-sm-6">
-                <div class="what-we-do-item">
+                <div
+                  class="what-we-do-item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <div class="icon">
                     <img
                       src="images/icons/wwd-icon1.png"
@@ -237,7 +263,11 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="what-we-do-item">
+                <div
+                  class="what-we-do-item"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
                   <div class="icon">
                     <img
                       src="images/icons/wwd-icon2.png"
@@ -260,7 +290,11 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="what-we-do-item">
+                <div
+                  class="what-we-do-item"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
                   <div class="icon">
                     <img
                       src="images/icons/wwd-icon3.png"
@@ -283,7 +317,11 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <div class="what-we-do-item">
+                <div
+                  class="what-we-do-item"
+                  data-aos="fade-up"
+                  data-aos-delay="800"
+                >
                   <div class="icon">
                     <img
                       src="images/icons/wwd-icon4.png"
@@ -316,18 +354,22 @@
       <div class="container">
         <div class="row d-flex justify-content-between align-items-end pb-5">
           <div class="col-lg-8">
-            <div class="section-title">
-              <span class="sub-title fw-semibold fs-4 text-secondary"
+            <div class="section-title" data-aos="fade-up" data-aos-delay="400">
+              <span
+                class="sub-title fw-semibold fs-4 text-secondary"
+                data-aos="fade-up"
+                data-aos-delay="200"
                 >Meet the Team</span
               >
-              <h2 class="mt-5" style="font-size: 55px">Our expert agents</h2>
+              <h2 class="mt-5">Our expert agents</h2>
             </div>
           </div>
           <div class="col-lg-4 text-left text-lg-end">
             <a
               href="contact.html"
-              style=""
-              class="btn btn-outline-secondary border border-2 border-secondary fw-semibold"
+              class="btn team-btn btn-outline-secondary border border-2 border-secondary fw-semibold"
+              data-aos="fade-up"
+              data-aos-delay="200"
               >Contact Us
               <i class="bi bi-arrow-right"></i>
             </a>
@@ -335,7 +377,7 @@
         </div>
         <div class="row mt-5">
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-up" data-aos-delay="0">
               <img
                 src="images/team/member1.jpg"
                 decoding="async"
@@ -359,7 +401,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-up" data-aos-delay="000">
               <img
                 src="images/team/member2.jpg"
                 decoding="async"
@@ -383,7 +425,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-up" data-aos-delay="000">
               <img
                 src="images/team/member3.jpg"
                 decoding="async"
@@ -407,7 +449,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="team-member">
+            <div class="team-member" data-aos="fade-up" data-aos-delay="000">
               <img
                 src="images/team/member4.jpg"
                 decoding="async"
@@ -439,7 +481,11 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-7">
-            <div class="achievement-image">
+            <div
+              class="achievement-image"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
               <img
                 src="images/background/achievement-left-image.jpg"
                 decoding="async"
@@ -451,35 +497,60 @@
           <div class="col-xl-5 mb-5">
             <div class="row justify-content-center">
               <div class="col-lg-12">
-                <div class="section-title">
-                  <span class="sub-title text-secondary fw-bold mb-5 fs-4"
+                <div
+                  class="section-title"
+                  data-aos="fade-left"
+                  data-aos-delay="400"
+                >
+                  <span
+                    class="sub-title text-secondary fw-bold mb-5 fs-4"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
                     >Our Achievements</span
                   >
-                  <h2 style="font-size: 56px" class="">We Working for you</h2>
+                  <h2 style="font-size: 56px" class="ms-5">
+                    We Working for you
+                  </h2>
                 </div>
               </div>
               <div class="counter-wrap mt-4">
                 <div class="row gap-40">
                   <div class="col-md-6">
-                    <div class="counter-item-two justify-content-center">
+                    <div
+                      class="counter-item-two justify-content-center"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
                       <span class="count-text" data-bs-target="8"></span>
                       <span class="counter-title">Cities <br />Build Up</span>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="counter-item-two justify-content-center">
+                    <div
+                      class="counter-item-two justify-content-center"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
                       <span class="count-text" data-bs-target="131"></span>
                       <span class="counter-title">Complexes <br />Erected</span>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="counter-item-two justify-content-center">
+                    <div
+                      class="counter-item-two justify-content-center"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
                       <span class="count-text" data-bs-target="872"></span>
                       <span class="counter-title">Workers <br />Employed</span>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="counter-item-two justify-content-center">
+                    <div
+                      class="counter-item-two justify-content-center"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
                       <span class="count-text" data-bs-target="1321"></span>
                       <span class="counter-title"
                         >Satisfied <br />Customers</span
@@ -499,15 +570,24 @@
       <div class="container-fluid">
         <div class="row z-1 justify-content-center text-center">
           <div class="col-xl-7 col-lg-9">
-            <div class="section-title">
-              <span class="sub-title text-secondary fw-bold fs-4">Reviews</span>
+            <div class="section-title" data-aos="fade-up" data-aos-delay="400">
+              <span
+                class="sub-title text-secondary fw-bold fs-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                >Reviews</span
+              >
               <h2 style="font-size: 60px" class="mt-5">
                 What Our Clients Says
               </h2>
             </div>
           </div>
           <div class="testimonial-slider-two">
-            <div class="testimonial-item style-two">
+            <div
+              class="testimonial-item style-two"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="quote-icon">
                 <i class="fa-solid fa-quote-left" style="font-size: 60px"></i>
               </div>
@@ -520,7 +600,11 @@
               <h6>Ruben Vetrov</h6>
               <span class="designations">Office Manager</span>
             </div>
-            <div class="testimonial-item style-two">
+            <div
+              class="testimonial-item style-two"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="quote-icon">
                 <i class="fa-solid fa-quote-left" style="font-size: 60px"></i>
               </div>
@@ -533,7 +617,11 @@
               <h6>Ruben Vetrov</h6>
               <span class="designations">Office Manager</span>
             </div>
-            <div class="testimonial-item style-two">
+            <div
+              class="testimonial-item style-two"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="quote-icon">
                 <i class="fa-solid fa-quote-left" style="font-size: 60px"></i>
               </div>
@@ -546,7 +634,11 @@
               <h6>Ruben Vetrov</h6>
               <span class="designations">Office Manager</span>
             </div>
-            <div class="testimonial-item style-two">
+            <div
+              class="testimonial-item style-two"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="quote-icon">
                 <i class="fa-solid fa-quote-left" style="font-size: 60px"></i>
               </div>
@@ -559,7 +651,11 @@
               <h6>Ruben Vetrov</h6>
               <span class="designations">Office Manager</span>
             </div>
-            <div class="testimonial-item style-two">
+            <div
+              class="testimonial-item style-two"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="quote-icon">
                 <i class="fa-solid fa-quote-left" style="font-size: 60px"></i>
               </div>
@@ -572,7 +668,11 @@
               <h6>Ruben Vetrov</h6>
               <span class="designations">Office Manager</span>
             </div>
-            <div class="testimonial-item style-two">
+            <div
+              class="testimonial-item style-two"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="quote-icon">
                 <i class="fa-solid fa-quote-left" style="font-size: 60px"></i>
               </div>
@@ -585,7 +685,11 @@
               <h6>Ruben Vetrov</h6>
               <span class="designations">Office Manager</span>
             </div>
-            <div class="testimonial-item style-two">
+            <div
+              class="testimonial-item style-two"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div class="quote-icon">
                 <i class="fa-solid fa-quote-left" style="font-size: 60px"></i>
               </div>
@@ -607,7 +711,7 @@
     <footer class="main-footer position-relative z-1 mt-5" id="footer">
       <div class="footer-top pt-6 pb-5">
         <div class="container">
-          <div class="row justify-content-center g-8">
+          <div class="row justify-content-center gx-8">
             <div class="col-xl-4 col-lg-7">
               <div class="section-title text-white mb-5">
                 <span
@@ -747,23 +851,22 @@
     </button>
 
     <!-- Load jQuery first -->
+    <!-- 1. First load jQuery as it's a dependency for many other libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Load jQuery plugins and libraries dependent on jQuery -->
+    <!-- 2. Load Bootstrap (after jQuery) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- 3. Load jQuery plugins (after jQuery, before your custom code) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- Load Nice Select after jQuery -->
     <script src="/js/jquery.nice-select.js"></script>
 
-    <!-- Load Bootstrap and other libraries -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 4. Load AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Ensure no duplicate libraries (e.g., remove this duplicate imagesLoaded if not needed) -->
-    <!-- <script src="/js/imagesloaded.pkgd.min.js"></script> -->
-
-    <!-- Your custom scripts should come last, after all dependencies are loaded -->
+    <!-- 5. Your custom scripts last -->
     <script src="/js/script.js"></script>
     <script src="/js/script2.js"></script>
   </body>

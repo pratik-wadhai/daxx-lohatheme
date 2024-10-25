@@ -8,6 +8,20 @@
   background-color: #282e35;
   background-position: bottom;
 }
+// mobile display
+@media only screen and (max-width: 576px) {
+  .banner-area {
+    height: 100px;
+  }
+  .banner-content {
+    margin-top: -70px;
+  }
+  .what-we-do-area .section-title h2 {
+    font-size: 36px;
+    text-align: left;
+    width: 100%;
+  }
+}
 
 .banner-content h1 {
   color: white;
@@ -84,6 +98,10 @@
 .what-we-do-item h6 {
   margin-bottom: 15px;
 }
+.what-we-do-area h2 {
+  font-size: 50px;
+  width: 75%;
+}
 
 .what-we-do-item p {
   font-size: 15px;
@@ -129,7 +147,7 @@
 }
 
 .team-member {
-  padding: 40px;
+  padding: 25px;
   background: white;
   text-align: center;
   margin-bottom: 30px;
@@ -143,6 +161,17 @@
   display: block;
   font-size: 16px;
   margin-bottom: 8px;
+}
+.team-area .section-title h2 {
+  font-size: 55px;
+}
+@media only screen and (max-width: 576px) {
+  .team-area .section-title h2 {
+    font-size: 36px;
+  }
+  .team-btn {
+    margin-top: 20px;
+  }
 }
 
 .team-member h6 {
@@ -160,6 +189,12 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 576px) {
+  .team-member {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /*******************************************************/
 /******************** ## Achievement Area **************/
@@ -167,6 +202,16 @@
 
 .bgc-secondary {
   background-color: #fff5e2;
+}
+
+@media only screen and (min-width: 992px) {
+  .achievement-image img {
+    margin-left: 90px;
+  }
+  .achievement-area .section-title {
+    margin-top: 40px;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -178,6 +223,14 @@
 @media only screen and (min-width: 1200px) {
   .counter-wrap {
     margin-left: -110px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .section-title {
+    margin-top: 50px;
+    h2 {
+      font-size: 36px !important;
+    }
   }
 }
 
@@ -252,3 +305,5 @@
 .testimonials-prev {
   left: 0;
 }
+
+// footer

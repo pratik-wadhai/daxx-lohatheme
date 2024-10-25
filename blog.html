@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       type="text/css"
@@ -40,10 +40,10 @@
     <!-- main header -->
     <header class="main-header">
       <div class="header-upper">
-        <div class="container clearfix">
-          <div class="header-inner position-relative d-flex align-item-center">
+        <div class="container-fluid clearfix">
+          <div class="header-inner position-relative d-flex align-items-center">
             <!-- logo -->
-            <div class="logo-outer my-auto" style="margin-left: -60px">
+            <div class="logo-outer my-auto">
               <div class="logo">
                 <a href="index.html">
                   <img src="images/logos/logo.png" alt="logo" title="logo" />
@@ -54,6 +54,16 @@
               <!-- main menu -->
               <nav class="main-menu navbar-expand-lg">
                 <div class="navbar-header py-10">
+                  <!-- mobile logo -->
+                  <div class="mobile-logo">
+                    <a href="index.html">
+                      <img
+                        src="images/logos/logo-daxx.png"
+                        alt="Logo"
+                        title="Logo"
+                      />
+                    </a>
+                  </div>
                   <!-- toggle button -->
                   <button
                     class="navbar-toggle"
@@ -152,13 +162,13 @@
               </nav>
             </div>
             <!-- menu btns -->
-            <div class="menu-btns">
+            <div class="menu-btns my-auto">
               <a
                 href="index.html"
                 class="theme-btn btn btn-secondary text-white px-2 py-1"
               >
                 <small>Ask a Question</small>
-                <i class="bi bi-chat-dots"></i>
+                <i class="fa-regular fa-comment-dots"></i>
               </a>
             </div>
           </div>
@@ -172,9 +182,13 @@
       <div class="container pb-5">
         <div class="row align-items-center justify-content-between">
           <div class="col-xl-8 col-lg-12">
-            <div class="banner-content mb-8 py-5">
+            <div
+              class="banner-content mb-8 py-5"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb" data-aos="fade-up" data-aos-delay="400">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
                     Blog
@@ -189,11 +203,11 @@
     </section>
 
     <!-- blog area -->
-    <section class="blog-area position-relative z-1 pt-6 pb-6 mt-6">
+    <section class="blog-area position-relative z-1 pt-6 pb-6">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-10 col-md-10">
-            <div class="blog-item">
+            <div class="blog-item" data-aos="fade-up" data-aos-delay="200">
               <div class="image">
                 <a href="index.html">
                   <img
@@ -247,7 +261,7 @@
             </div>
           </div>
           <div class="col-xl-10 col-md-10">
-            <div class="blog-item">
+            <div class="blog-item" data-aos="fade-up" data-aos-delay="400">
               <div class="image">
                 <a href="index.html">
                   <img
@@ -301,7 +315,7 @@
             </div>
           </div>
           <div class="col-xl-10 col-md-10">
-            <div class="blog-item">
+            <div class="blog-item" data-aos="fade-up" data-aos-delay="600">
               <div class="image">
                 <a href="index.html">
                   <img
@@ -355,7 +369,7 @@
             </div>
           </div>
           <div class="col-xl-10 col-md-10">
-            <div class="blog-item">
+            <div class="blog-item" data-aos="fade-up" data-aos-delay="800">
               <div class="image video">
                 <img
                   src="images/blog/blog-middle.png"
@@ -414,7 +428,9 @@
           </div>
           <div class="col-xl-10 col-md-10">
             <div
-              class="blog-item wow fadeInUp delay-0-10s animated"
+              class="blog-item"
+              data-aos="fade-up"
+              data-aos-delay="1000"
               style="visibility: visible; animation-name: fadeInUp"
             >
               <div class="image bgc-primary"></div>
@@ -434,7 +450,9 @@
           </div>
           <div class="col-xl-10 col-md-10">
             <div
-              class="blog-item wow fadeInUp delay-0-12s animated"
+              class="blog-item"
+              data-aos="fade-up"
+              data-aos-delay="1200"
               style="visibility: visible; animation-name: fadeInUp"
             >
               <div class="image bgc-black"></div>
@@ -460,8 +478,9 @@
           </div>
         </div>
         <ul
-          class="pagination mt-40 flex-wrap justify-content-center wow fadeInUp delay-0-2s animated"
-          style="visibility: visible; animation-name: fadeInUp"
+          class="pagination mt-40 flex-wrap justify-content-center"
+          data-aos="fade-up"
+          data-aos-delay="200"
         >
           <li class="page-item">
             <a
@@ -492,9 +511,9 @@
 
     <!-- footer -->
     <footer class="main-footer position-relative z-1 mt-5" id="footer">
-      <div class="footer-top pt-6 pb-5">
+      <div class="footer-top pt-6">
         <div class="container">
-          <div class="row justify-content-center g-8">
+          <div class="row justify-content-center gx-8">
             <div class="col-xl-4 col-lg-7">
               <div class="section-title text-white mb-5">
                 <span
@@ -554,7 +573,7 @@
                 type="text"
                 name=""
                 placeholder="Phone"
-                style="width: 500px"
+                style="width: 500px; height: 50px"
                 class="border border-end"
               />
               <button class="btn btn-secondary px-4 border-start" type="submit">
@@ -565,8 +584,8 @@
           <hr style="opacity: 1" />
         </div>
       </div>
-      <div class="footer-bottom pt-5 pb-7">
-        <div class="container">
+      <div class="footer-bottom pt-6 pb-7">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xl-2 col-md-4">
               <div class="footer-logo">
@@ -602,16 +621,11 @@
               </div>
             </div>
             <div class="col-xl-3 col-md-8">
-              <div
-                class="copyright-area mb-5 text-xl-end text-center text-md-start"
-              >
-                <small style="font-size: 12px"
-                  >© 2024 DAX Residental Complex.All Rights Reserved /</small
-                >
+              <div class="copyright-area text-xl-end text-center text-md-start">
+                © 2024 DAX Residental Complex.All Rights Reserved >
                 <a
                   href="https://daxx.lohatheme.com/?p=111"
                   class="text-secondary text-decoration-none"
-                  style="font-size: 12px"
                   >Privacy Policy</a
                 >
                 /
@@ -627,30 +641,28 @@
         </div>
       </div>
     </footer>
-
     <!-- scroll top button -->
     <button id="to-top" class="to-top-btn border rounded">
       <i class="bi bi-arrow-bar-up text-white fs-3"></i>
     </button>
 
     <!-- Load jQuery first -->
+    <!-- 1. First load jQuery as it's a dependency for many other libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Load jQuery plugins and libraries dependent on jQuery -->
+    <!-- 2. Load Bootstrap (after jQuery) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- 3. Load jQuery plugins (after jQuery, before your custom code) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- Load Nice Select after jQuery -->
     <script src="/js/jquery.nice-select.js"></script>
 
-    <!-- Load Bootstrap and other libraries -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 4. Load AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Ensure no duplicate libraries (e.g., remove this duplicate imagesLoaded if not needed) -->
-    <!-- <script src="/js/imagesloaded.pkgd.min.js"></script> -->
-
-    <!-- Your custom scripts should come last, after all dependencies are loaded -->
+    <!-- 5. Your custom scripts last -->
     <script src="/js/script.js"></script>
     <script src="/js/script2.js"></script>
   </body>

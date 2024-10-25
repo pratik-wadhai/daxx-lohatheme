@@ -102,9 +102,17 @@ input[type="radio"] {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.container,
+.container-fluid {
+  // max-width: 100%;
+  // overflow-x: hidden;
+}
 body {
   overflow-x: hidden;
+  // width: 100%;
+  // max-width: 100%;
 }
+
 .xl-text {
   font-size: 60px;
 }
@@ -136,7 +144,7 @@ body {
   border-color: var(--bs-secondary);
 }
 .nav-link {
-  color: var(--bs-light);
+  // color: var(--bs-light);
 }
 
 .to-top-btn {
@@ -208,13 +216,15 @@ body {
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
 }
+.header-inner {
+  margin-top: -10px;
+}
 
 .main-header .header-upper {
   z-index: 5;
   width: 100%;
   position: absolute;
-  -webkit-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
+
   transition: all 500ms ease;
 }
 
@@ -243,12 +253,21 @@ body {
 .main-header.fixed-header .header-upper {
   top: 0;
   left: 0;
+  right: 0;
   position: fixed;
   background: #4a515b;
+  height: 65px;
   -webkit-animation: sticky 1s;
   animation: sticky 1s;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, 0.1);
   box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, 0.1);
+
+  .logo-outer {
+    margin-top: 12px !important;
+  }
+  .menu-btns {
+    margin-top: 22px !important;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -292,8 +311,6 @@ body {
 }
 
 .main-menu .navbar-collapse > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -664,11 +681,21 @@ body {
 .hero-content h1 {
   color: white;
   margin-bottom: 40px;
+  margin-left: 10rem;
 }
 
 @media only screen and (max-width: 1399px) {
   .hero-content h1 {
     font-size: 65px;
+  }
+  .hero-content {
+    margin-left: -7rem;
+    .btn-outline-light {
+      margin-left: 10rem;
+    }
+  }
+  .hero-video-btn {
+    margin-right: 2rem;
   }
 }
 
@@ -687,25 +714,23 @@ body {
 @media only screen and (max-width: 575px) {
   .hero-content h1 {
     font-size: 42px;
+    margin-top: -3rem;
+    margin-left: 111px;
+  }
+  .hero-content .btn-outline-light {
+    margin-bottom: 15px;
+    margin-left: 111px;
+  }
+  .hero-content .btn-primary {
+    margin-top: -16px;
+  }
+  .hero-video-btn {
+    margin-left: -8rem;
   }
 }
-
 .corner-shapes-wrap {
   z-index: 1;
   position: relative;
-  -webkit-clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 62%,
-    93% 70%,
-    93% 80%,
-    75% 100%,
-    66% 90%,
-    25% 100%,
-    7% 80%,
-    7% 70%,
-    0 62%
-  );
   clip-path: polygon(
     0 0,
     100% 0,
@@ -794,7 +819,7 @@ body {
 }
 
 .sub-title {
-  display: inline-block; /* Allows ::before and ::after to work on a span */
+  display: inline-block;
   position: relative;
 }
 
@@ -804,30 +829,47 @@ body {
   display: inline-block;
   width: 40px;
   height: 2px;
-  background: var(--bs-secondary); /* Use your secondary color variable */
+  background: var(--bs-secondary);
   vertical-align: middle;
 }
 
 .sub-title::before {
-  margin-right: 10px; /* Adjust space before text */
+  margin-right: 10px;
 }
 
 .sub-title::after {
-  margin-left: 10px; /* Adjust space after text */
+  margin-left: 10px;
 }
+
+/*******************************************************/
+/******************** ## About Area ********************/
+/*******************************************************/
 
 .about .decoration {
   left: 10px;
-  width: 250px;
+  width: 300px;
 }
 .about h2 {
   font-size: 55px;
   width: 770px;
-  margin-left: -20px;
   position: relative;
 }
 .about p {
   margin-left: -40px;
+}
+@media only screen and (max-width: 575px) {
+  .about .decoration {
+    left: 10px;
+    max-width: 22%;
+    margin-left: 200px;
+  }
+  .about h2 {
+    font-size: 32px;
+    width: 400px;
+  }
+  .about p {
+    padding-left: 2.25rem;
+  }
 }
 
 /* Introducing Area */
@@ -890,6 +932,13 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+// intro mobile
+@media only screen and (max-width: 575px) {
+  .introducing-right-content .section-title {
+    margin-top: 100px;
+  }
+}
 /* blockquote section */
 
 .blockquote-area:before {
@@ -929,6 +978,14 @@ body {
   .blockquote-content .blockquote-text {
     font-size: 22px;
   }
+  .blockquote-author {
+    // margin-right: 10px;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -948,6 +1005,14 @@ body {
     url("../images/video-bg.jpg") center center no-repeat;
   background-size: auto;
   min-height: 500px;
+}
+.video-content-part h2 {
+  font-size: 55px;
+}
+@media only screen and (max-width: 575px) {
+  .video-content-part h2 {
+    font-size: 32px;
+  }
 }
 .video-play {
   z-index: 1;
@@ -1035,6 +1100,18 @@ body {
   padding-left: 100px;
 }
 
+.timeline h1 {
+  margin-top: -23px;
+}
+@media only screen and (max-width: 575px) {
+  .timeline h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .timeline-content {
+    margin-top: 10rem;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .timeline-item {
     padding-left: 45px;
@@ -1175,6 +1252,9 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.apartment .section-title p {
+  width: 50%;
+}
 
 // tab style
 .tab-style-one .nav-link {
@@ -1182,17 +1262,20 @@ body {
   margin-bottom: 20px;
   padding: 0 10px 22px;
   background: transparent;
-  border-bottom: 3px solid var(--bs-primary);
+  border-bottom: 3px solid #d9dfe7;
 }
 
 .tab-style-one .nav-link.active {
-  color: var(--bs-secondary);
+  color: #f15b26;
   background: transparent;
   border-bottom-color: var(--bs-secondary);
 }
 @media only screen and (max-width: 575px) {
   .tab-style-one .nav-link {
     font-size: 20px !important;
+  }
+  .apartment .section-title p {
+    width: 100%;
   }
 }
 
@@ -1208,6 +1291,32 @@ body {
   }
 }
 // image slider section
+.imageSlider:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff5e2;
+  -webkit-clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
+  clip-path: polygon(0 30%, 100% 0, 100% 70%, 0 100%);
+}
+
+@media only screen and (max-width: 1199px) {
+  .imageSlider:before {
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 60%, 0 100%);
+    clip-path: polygon(0 25%, 100% 0, 100% 60%, 0 100%);
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .imageSlider:before {
+    -webkit-clip-path: polygon(0 30%, 100% 0, 100% 50%, 0 100%);
+    clip-path: polygon(0 30%, 100% 0, 100% 50%, 0 100%);
+  }
+}
 
 // benefits section
 
@@ -1216,6 +1325,11 @@ body {
 }
 .benefits .sub-title {
   color: var(--bs-secondary);
+}
+@media only screen and (max-width: 576px) {
+  .benefits .section-title h2 {
+    font-size: 32px;
+  }
 }
 
 // counter
@@ -1232,6 +1346,14 @@ body {
   background: #d9dfe7;
 }
 
+@media only screen and (max-width: 576px) {
+  .counter-item .counter-count {
+    font-size: 42px;
+  }
+  .counter-item {
+    padding-top: 35px;
+  }
+}
 // features section
 
 .feature-image {
@@ -1310,6 +1432,9 @@ body {
     width: 25px;
     height: 25px;
   }
+  .feature-content {
+    z-index: 2;
+  }
 }
 
 .feature-image .hotspot-btn:focus,
@@ -1362,6 +1487,14 @@ body {
   z-index: 1;
   position: relative;
 }
+.developer h1 {
+  font-size: 49px;
+}
+@media only screen and (max-width: 575px) {
+  .developer h1 {
+    font-size: 36px;
+  }
+}
 .developer-item .developer-content {
   position: absolute;
   left: 0;
@@ -1406,6 +1539,11 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+@media only screen and (max-width: 575px) {
+  .author-text {
+    // width: 100%;
+  }
+}
 .testimonials-next {
   right: 0;
 }
@@ -1448,6 +1586,11 @@ body {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 576px) {
+  .footer-cta-inner .btn {
+    width: inherit;
+  }
 }
 
 /* Pagination */
@@ -1509,4 +1652,31 @@ body {
 
 .pagination li:not(.active) a:hover:before {
   opacity: 0;
+}
+
+// review
+
+.review h2 {
+  font-size: 45px;
+}
+
+@media only screen and (max-width: 576px) {
+  .review h2 {
+    font-size: 36px;
+  }
+
+  .footer-logo {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: -15px;
+  }
+  .footer-socials {
+    margin-top: 15px;
+  }
+  .copyright-area small {
+    font-size: 14px;
+  }
+}
+.copyright-area {
+  font-size: 12px;
 }

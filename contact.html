@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,6 +21,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -42,10 +43,10 @@
     <!-- main header -->
     <header class="main-header">
       <div class="header-upper">
-        <div class="container clearfix">
-          <div class="header-inner position-relative d-flex align-item-center">
+        <div class="container-fluid clearfix">
+          <div class="header-inner position-relative d-flex align-items-center">
             <!-- logo -->
-            <div class="logo-outer my-auto" style="margin-left: -60px">
+            <div class="logo-outer my-auto">
               <div class="logo">
                 <a href="index.html">
                   <img src="images/logos/logo.png" alt="logo" title="logo" />
@@ -56,6 +57,16 @@
               <!-- main menu -->
               <nav class="main-menu navbar-expand-lg">
                 <div class="navbar-header py-10">
+                  <!-- mobile logo -->
+                  <div class="mobile-logo">
+                    <a href="index.html">
+                      <img
+                        src="images/logos/logo-daxx.png"
+                        alt="Logo"
+                        title="Logo"
+                      />
+                    </a>
+                  </div>
                   <!-- toggle button -->
                   <button
                     class="navbar-toggle"
@@ -154,13 +165,13 @@
               </nav>
             </div>
             <!-- menu btns -->
-            <div class="menu-btns">
+            <div class="menu-btns my-auto">
               <a
                 href="index.html"
                 class="theme-btn btn btn-secondary text-white px-2 py-1"
               >
                 <small>Ask a Question</small>
-                <i class="bi bi-chat-dots"></i>
+                <i class="fa-regular fa-comment-dots"></i>
               </a>
             </div>
           </div>
@@ -174,9 +185,13 @@
       <div class="container pb-5">
         <div class="row align-items-center justify-content-between">
           <div class="col-xl-8 col-lg-12">
-            <div class="banner-content mb-8 py-5">
+            <div
+              class="banner-content mb-8 py-5"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb" data-aos="fade-up" data-aos-delay="400">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
                   <li class="breadcrumb-item active" aria-current="page">
                     Contact
@@ -193,16 +208,18 @@
     <!-- contact area -->
 
     <section class="contact-area mt-7">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row justify-content-between">
-          <div class="col-xl-4 col-lg-5">
+          <div
+            class="col-xl-4 col-lg-5"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <div class="section-title mb-6">
-              <span class="sub-title text-secondary fw-bold fs-5 text-uppercase"
+              <span class="sub-title text-secondary fw-bold fs-8 text-uppercase"
                 >Write a Message</span
               >
-              <h2 style="font-size: 55px" class="mt-5">
-                We're here to help you
-              </h2>
+              <h2 class="mt-5">We're here to help you</h2>
             </div>
             <div class="contact-info-item">
               <div class="icon">
@@ -244,7 +261,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-7 border border-1 p-5">
+          <div
+            class="col-lg-7 border border-1 p-3 mt-3"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <div
               class="wpcf7 js"
               id="wpcf7-f506-p227-o1"
@@ -340,7 +361,7 @@
                   <div class="form-group text-center mb-0">
                     <p>
                       <input
-                        class="wpcf7-form-control has-spinner wpcf7-submit theme-btn btn btn-secondary style-three w-100"
+                        class="wpcf7-form-control has-spinner wpcf7-submit text-white theme-btn btn btn-secondary style-three w-100"
                         type="submit"
                         value="Send A Message"
                       /><span class="wpcf7-spinner"></span>
@@ -363,15 +384,15 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="200">
               <div class="icon">
                 <i class="fa-regular fa-building"></i>
               </div>
-              <h5>Tower Business Center</h5>
+              <h5>Tower <br />Business Center</h5>
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="400">
               <div class="icon">
                 <i class="fa-solid fa-house-user"></i>
               </div>
@@ -382,7 +403,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="600">
               <div class="icon">
                 <i class="fa-solid fa-house"></i>
               </div>
@@ -390,7 +411,7 @@
             </div>
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-up" data-aos-delay="800">
               <div class="icon">
                 <i class="fa-solid fa-tower-observation"></i>
               </div>
@@ -403,9 +424,9 @@
 
     <!-- footer -->
     <footer class="main-footer position-relative z-1 mt-5" id="footer">
-      <div class="footer-top pt-6 pb-5">
+      <div class="footer-top pt-6">
         <div class="container">
-          <div class="row justify-content-center g-8">
+          <div class="row justify-content-center gx-8">
             <div class="col-xl-4 col-lg-7">
               <div class="section-title text-white mb-5">
                 <span
@@ -465,7 +486,7 @@
                 type="text"
                 name=""
                 placeholder="Phone"
-                style="width: 500px"
+                style="width: 500px; height: 50px"
                 class="border border-end"
               />
               <button class="btn btn-secondary px-4 border-start" type="submit">
@@ -476,8 +497,8 @@
           <hr style="opacity: 1" />
         </div>
       </div>
-      <div class="footer-bottom pt-5 pb-7">
-        <div class="container">
+      <div class="footer-bottom pt-6 pb-7">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-xl-2 col-md-4">
               <div class="footer-logo">
@@ -513,16 +534,11 @@
               </div>
             </div>
             <div class="col-xl-3 col-md-8">
-              <div
-                class="copyright-area mb-5 text-xl-end text-center text-md-start"
-              >
-                <small style="font-size: 12px"
-                  >© 2024 DAX Residental Complex.All Rights Reserved /</small
-                >
+              <div class="copyright-area text-xl-end text-center text-md-start">
+                © 2024 DAX Residental Complex.All Rights Reserved >
                 <a
                   href="https://daxx.lohatheme.com/?p=111"
                   class="text-secondary text-decoration-none"
-                  style="font-size: 12px"
                   >Privacy Policy</a
                 >
                 /
@@ -545,23 +561,22 @@
     </button>
 
     <!-- Load jQuery first -->
+    <!-- 1. First load jQuery as it's a dependency for many other libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Load jQuery plugins and libraries dependent on jQuery -->
+    <!-- 2. Load Bootstrap (after jQuery) -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- 3. Load jQuery plugins (after jQuery, before your custom code) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <!-- Load Nice Select after jQuery -->
     <script src="/js/jquery.nice-select.js"></script>
 
-    <!-- Load Bootstrap and other libraries -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 4. Load AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Ensure no duplicate libraries (e.g., remove this duplicate imagesLoaded if not needed) -->
-    <!-- <script src="/js/imagesloaded.pkgd.min.js"></script> -->
-
-    <!-- Your custom scripts should come last, after all dependencies are loaded -->
+    <!-- 5. Your custom scripts last -->
     <script src="/js/script.js"></script>
     <script src="/js/script2.js"></script>
   </body>
