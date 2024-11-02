@@ -200,6 +200,18 @@
 /******************** ## Achievement Area **************/
 /*******************************************************/
 
+@media only screen and (max-width: 992px) {
+  .achievement-area .section-title {
+    margin-top: 5rem !important ;
+    text-align: center !important;
+  }
+  .testimonials-next {
+    right: 10% !important;
+  }
+  .testimonials-prev {
+    left: 10% !important;
+  }
+}
 .bgc-secondary {
   background-color: #fff5e2;
 }
@@ -231,6 +243,13 @@
     h2 {
       font-size: 36px !important;
     }
+  }
+
+  .testimonials-prev {
+    margin-left: -35px !important;
+  }
+  .testimonials-next {
+    margin-right: -35px !important;
   }
 }
 

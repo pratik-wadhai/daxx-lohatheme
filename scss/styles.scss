@@ -150,8 +150,8 @@ body {
 .to-top-btn {
   position: fixed;
   z-index: 20;
-  bottom: 20px;
   right: 0;
+  bottom: 20px;
   opacity: 0;
   width: 45px;
   height: 45px;
@@ -235,8 +235,9 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-  .header-upper {
-    margin-top: 15px;
+  .main-header.fixed-header .header-upper {
+    // margin-top: 15px;
+    // width: 83%;
   }
   .navbar-header {
     margin-top: 15px;
@@ -265,9 +266,7 @@ body {
   position: fixed;
   background: #4a515b;
   height: 65px;
-  -webkit-animation: sticky 1s;
   animation: sticky 1s;
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, 0.1);
   box-shadow: 0px 0px 30px 0px rgba(87, 95, 245, 0.1);
 
   .logo-outer {
@@ -347,13 +346,11 @@ body {
     width: calc(100% - 40px);
     height: 6px;
     background: #f15b26;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
+
     transform: translateX(-50%);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
+
     transition: 0.4s;
   }
 }
@@ -390,14 +387,11 @@ body {
 
 .main-menu .navbar-collapse li {
   padding: 52px 20px 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+
   justify-content: space-between;
 }
 
@@ -711,12 +705,88 @@ body {
   .hero-content h1 {
     font-size: 55px;
   }
+  .hero-content .btn-primary {
+    margin-left: 24px !important;
+    margin-top: 0px !important;
+  }
 }
 @media only screen and (max-width: 767px) {
   .hero-content h1 {
     font-size: 50px;
     margin-bottom: 20px;
   }
+}
+
+// ipad
+@media only screen and (max-width: 992px) {
+  .hero-video-btn {
+    margin-left: 50px !important;
+  }
+  .about .section-title h2 {
+    font-size: 50px !important;
+    // padding-right: 43px !important;
+    width: 700px !important;
+  }
+  .about .section-title p {
+    text-align: center !important;
+  }
+  .navbar-header {
+    margin-top: 18px;
+  }
+  .about .decoration {
+    left: 212px !important;
+    width: 188px !important ;
+  }
+
+  .introducing-right-content {
+    margin-top: 8rem !important;
+  }
+  .timeline-content {
+    margin-top: 5rem !important;
+    margin-left: 5rem !important;
+  }
+
+  .apartment {
+    .section-title h2 {
+      font-size: 46px !important;
+      width: auto !important;
+    }
+    .section-title p {
+      font-size: 20px !important;
+      width: auto !important;
+    }
+  }
+  .feature-content {
+    z-index: 2;
+  }
+  .developer h1 {
+    font-size: 3rem !important;
+  }
+  .developer p {
+    font-size: 1.5rem !important;
+  }
+  .developer-item .developer-content {
+    position: absolute;
+    left: 0;
+    // bottom: -243px !important;
+    z-index: 2;
+    width: 100%;
+    padding: 40px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .introducing-right-image:before {
+    margin-left: -215px !important;
+  }
+}
+
+.hero-content .theme-btn {
+  margin-top: 20px;
+}
+
+.hero-content .theme-btn.style-two {
+  margin-right: 40px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -737,9 +807,15 @@ body {
   }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 400px) {
   .hero-content .btn-primary {
-    margin-left: 5px !important;
+    margin-left: 140px !important;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .hero-content .btn-primary {
+    margin-left: 120px !important;
+    margin-top: 10px;
   }
 }
 .corner-shapes-wrap {
@@ -961,7 +1037,7 @@ body {
   position: absolute;
   left: -50%;
   // top: 40%;
-  width: 200%;
+  width: 150%;
   height: 1px;
   background: #d9dfe7;
   -webkit-transform: rotate(8deg);
@@ -1694,4 +1770,14 @@ body {
 }
 .copyright-area {
   font-size: 12px;
+}
+
+@media only screen and (max-width: 576px) {
+  .about .section-title h2 {
+    font-size: 36px !important;
+    width: auto !important;
+  }
+  .timeline-content {
+    margin-left: -10px !important;
+  }
 }

@@ -1,3 +1,12 @@
+@media only screen and (max-width: 992px) {
+  .schedule-form-area {
+    margin-top: 5rem !important;
+  }
+  .schedule-form-part {
+    padding: 42px 50px !important;
+    margin: 14px 50px !important;
+  }
+}
 /*******************************************************/
 /******************* ## Form Common *******************/
 /*******************************************************/
@@ -181,7 +190,20 @@ form.submitting .wpcf7-spinner {
     margin-top: -122px !important;
   }
   .schedule-form-area {
-    margin-top: -15rem !important;
+    margin: -15rem 0px !important;
+  }
+  .schedule-form-part {
+    margin: 0px 0px !important;
+  }
+  .schedule-form-part .section-title h3 {
+    font-size: 30px !important;
+  }
+  .schedule-form-part .section-title p {
+    line-height: 19px;
+    margin-bottom: -50px !important;
+  }
+  .google {
+    margin-top: 20rem !important;
   }
 }
 /*******************************************************/
@@ -276,6 +298,11 @@ form.submitting .wpcf7-spinner {
   .fc-daygrid-block-event .fc-event-time,
   .fc-daygrid-block-event .fc-event-title {
     font-size: 12px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .google {
+    margin-top: 5rem !important;
   }
 }
 .fc-h-event .fc-event-title-container {

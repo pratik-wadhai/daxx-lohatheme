@@ -1,8 +1,6 @@
 function userScroll() {
   const navbar = document.querySelector(".main-header");
   const toTopBtn = document.querySelector("#to-top");
-  // Log the navbar to check if it's null
-  // console.log(navbar); // This should not be null
 
   if (navbar) {
     // Ensure the navbar exists
